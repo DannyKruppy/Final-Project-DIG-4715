@@ -18,6 +18,7 @@ public class CharacterControllerScript : MonoBehaviour
     public float speed = 4.0f;
     public float sprintSpeed = 7.0f;
     public float gravity = -9.8f;
+    public float jumpVel = 40;
     Vector3 velocity;
 
     private Vector3 currentVelocity;
@@ -70,6 +71,11 @@ public class CharacterControllerScript : MonoBehaviour
         Movement();
         //Look();
         Gravity();
+
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            Jump();
+        }
 
         Recharge();
 
@@ -147,6 +153,14 @@ public class CharacterControllerScript : MonoBehaviour
         if (counter >= sprintDelay)
         {
             sprint += rechargeRate * Time.deltaTime;
+        }
+    }
+
+    void Jump()
+    {
+        if (controller.isGrounded)
+        {
+            velocity.y = jumpVel;
         }
     }
 }

@@ -636,6 +636,10 @@ PrefabInstance:
       value: -20
       objectReference: {fileID: 0}
     - target: {fileID: -7898361147579599329, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
+      propertyPath: jumpVel
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -7898361147579599329, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
       propertyPath: maxSprint
       value: 2
       objectReference: {fileID: 0}
@@ -1035,12 +1039,12 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
+    m_Bias: 0.01
+    m_NormalBias: 0.1
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
       e00: 1
@@ -1091,13 +1095,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448319543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &448319546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1110,7 +1114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
-  m_UsePipelineSettings: 1
+  m_UsePipelineSettings: 0
   m_AdditionalLightsShadowResolutionTier: 2
   m_CustomShadowLayers: 0
   m_LightCookieSize: {x: 1, y: 1}
