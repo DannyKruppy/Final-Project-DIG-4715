@@ -1290,6 +1290,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d2b3a93cd5ded42b09a8e201674448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseScript
+  pauseAction:
+    m_Name: Pause
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 3f034514-4df6-44c4-af99-b41b013a7055
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 908c48d9-4a2e-461e-99a2-f2efe1a93764
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Pause
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 2af9e005-7429-4541-b5d6-45b18824b573
+      m_Path: <Gamepad>/buttonNorth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Pause
+      m_Flags: 0
+    m_Flags: 0
   paused: 0
   pauseMenu: {fileID: 585657180}
   gameCanvas: {fileID: 12142313}
@@ -6395,7 +6420,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
   speed: 10
-  sprintSpeed: 20
+  sprintSpeed: 15
   gravity: -20
   jumpVel: 12
   acceleration: 100
