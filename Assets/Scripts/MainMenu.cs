@@ -4,38 +4,74 @@ using System.Collections;
 
 public class MainMenu : MonoBehaviour
 {
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip clickSound;
+    public AudioClip hoverSound;
+
+    public TitleMusic titleMusic;
+
+    private void PlayClick()
+    {
+        audioSource.PlayOneShot(clickSound);
+    }
+
+    public void PlayHover()
+    {
+        audioSource.PlayOneShot(hoverSound);
+    }
+
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync("GameplayPrototype");
+        if (titleMusic != null)
+        {
+            titleMusic.StopMusic();
+        }
+
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("GameplayPrototype"));
     }
 
     public void QuitGame()
     {
-        Application.Quit();
+        PlayClick();
+        StartCoroutine(QuitRoutine());
     }
 
     public void Credits()
     {
-        SceneManager.LoadSceneAsync("Credits");
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("Credits"));
     }
 
     public void Controls()
     {
-        SceneManager.LoadSceneAsync("Controls");
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("Controls"));
     }
 
-     public void Lore()
+    public void Lore()
     {
-        SceneManager.LoadSceneAsync("Lore");
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("Lore"));
     }
 
     public void BacktoMain()
     {
-        SceneManager.LoadSceneAsync(0);
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("Title"));
     }
 
-   
+    private IEnumerator LoadSceneWithDelay(string sceneName)
+    {
+        yield return new WaitForSecondsRealtime(0.2f); // small delay so sound plays
+        SceneManager.LoadSceneAsync(sceneName);
+    }
 
+    private IEnumerator QuitRoutine()
+    {
+        yield return new WaitForSecondsRealtime(0.2f);
+        Application.Quit();
+    }
 
-    
 }

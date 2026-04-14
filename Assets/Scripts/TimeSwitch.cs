@@ -12,6 +12,11 @@ public class TimeSwitch : MonoBehaviour
     public Material pastMat;
     public Material futureMat;
 
+    // JADON
+    public GameObject player;
+    public Material playerPastMat;
+    public Material playerFutureMat;
+
     public PauseScript pauseManager;
 
     bool isPast = true;
@@ -44,7 +49,7 @@ public class TimeSwitch : MonoBehaviour
             obj.SetActive(false);
         }
 
-        foreach(GameObject obj in pastObjects)
+        foreach (GameObject obj in pastObjects)
         {
             obj.GetComponent<Renderer>().sharedMaterial = pastMat;
         }
@@ -135,5 +140,15 @@ public class TimeSwitch : MonoBehaviour
         {
             SetMat(obj);
         }
+
+        // JADON
+        SetPlayerMat();
+    }
+
+    // JADON
+    void SetPlayerMat()
+    {
+        Renderer renderer = player.GetComponent<Renderer>();
+        renderer.sharedMaterial = isPast ? playerPastMat : playerFutureMat;
     }
 }

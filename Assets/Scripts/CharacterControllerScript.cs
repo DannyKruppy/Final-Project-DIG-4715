@@ -7,6 +7,10 @@ public class CharacterControllerScript : MonoBehaviour
 {
     private CharacterController controller;
 
+    // JADON
+    public AudioSource audioSource;
+    public AudioClip jumpSound;
+
     // Input Actions
     public InputAction moveAction;
     //public InputAction lookAction;
@@ -162,6 +166,7 @@ public class CharacterControllerScript : MonoBehaviour
         if (controller.isGrounded)
         {
             velocity.y = jumpVel;
+            audioSource.PlayOneShot(jumpSound); // JADON
         }
     }
 }
