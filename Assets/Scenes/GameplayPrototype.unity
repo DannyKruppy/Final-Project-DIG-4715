@@ -742,6 +742,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Switch
       m_Flags: 0
+    - m_Name: 
+      m_Id: c2026282-fc2b-4e6a-b9ac-d1dc432a02f2
+      m_Path: <Gamepad>/rightTrigger
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Switch
+      m_Flags: 0
     m_Flags: 0
   pastObjects:
   - {fileID: 2002598256}
@@ -6359,6 +6367,31 @@ MonoBehaviour:
       m_Processors: 
       m_Groups: 
       m_Action: Sprint
+      m_Flags: 0
+    m_Flags: 0
+  jumpAction:
+    m_Name: Jump
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d7c1ec61-13de-4611-be12-c7b937643bb3
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: f783dabd-7cbb-40f6-9f57-810634b764f4
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Jump
+      m_Flags: 0
+    - m_Name: 
+      m_Id: fc74eb40-0869-4883-8e00-072186257bd6
+      m_Path: <Gamepad>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Jump
       m_Flags: 0
     m_Flags: 0
   speed: 10
