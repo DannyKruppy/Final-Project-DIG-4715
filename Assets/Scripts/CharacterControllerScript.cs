@@ -15,6 +15,7 @@ public class CharacterControllerScript : MonoBehaviour
     public InputAction moveAction;
     //public InputAction lookAction;
     public InputAction sprintAction;
+    public InputAction jumpAction;
 
     //private Vector2 lookInput;
     private Vector2 moveInput;
@@ -48,6 +49,7 @@ public class CharacterControllerScript : MonoBehaviour
     void OnEnable()
     {
         moveAction.Enable();
+        jumpAction.Enable();
         //lookAction.Enable();
         sprintAction.Enable();
     }
@@ -55,6 +57,7 @@ public class CharacterControllerScript : MonoBehaviour
     void OnDisable()
     {
         moveAction.Disable();
+        jumpAction.Disable();
         //lookAction.Disable();
         sprintAction.Disable();
     }
@@ -77,7 +80,7 @@ public class CharacterControllerScript : MonoBehaviour
         //Look();
         Gravity();
 
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (jumpAction.WasPressedThisFrame())
         {
             Jump();
         }

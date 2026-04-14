@@ -718,6 +718,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6673a928785db4888f1b47436ecd68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeSwitch
+  switchAction:
+    m_Name: Switch
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 1da6efda-a488-4f02-b313-06a485a74c2b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 37eb0b8f-d933-4f21-941c-05702fa51b81
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Switch
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 16944465-28e5-4ad5-bc4e-d0ba0820dc98
+      m_Path: <Keyboard>/f
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Switch
+      m_Flags: 0
+    m_Flags: 0
   pastObjects:
   - {fileID: 2002598256}
   - {fileID: 1858152608}

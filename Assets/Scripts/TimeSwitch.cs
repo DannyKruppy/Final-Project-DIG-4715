@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class TimeSwitch : MonoBehaviour
 {
+    public InputAction switchAction;
+
     public GameObject[] pastObjects;
     public GameObject[] futureObjects;
     public GameObject[] persistentObjects;
@@ -36,6 +38,16 @@ public class TimeSwitch : MonoBehaviour
     Color blueColor;
     Color redColor;
 
+    void OnEnable()
+    {
+        switchAction.Enable();
+    }
+
+    void OnDisable()
+    {
+        switchAction.Disable();
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -62,7 +74,7 @@ public class TimeSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Keyboard.current.fKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame) && pauseManager.paused == false && timeLocked == false)
+        if (switchAction.WasPressedThisFrame() && pauseManager.paused == false && timeLocked == false)
         {
             isPast = !isPast;
             ApplyState();
