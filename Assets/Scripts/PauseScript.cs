@@ -5,6 +5,8 @@ using System.Collections;
 
 public class PauseScript : MonoBehaviour
 {
+    public InputAction pauseAction;
+
     public bool paused = false;
     public GameObject pauseMenu;
     public GameObject gameCanvas;
@@ -15,6 +17,16 @@ public class PauseScript : MonoBehaviour
 
     public AudioSource musicSource;
 
+    void OnEnable()
+    {
+        pauseAction.Enable();
+    }
+
+    void OnDisable()
+    {
+        pauseAction.Disable();
+    }
+
     void Start()
     {
         pauseMenu.SetActive(false);
@@ -24,7 +36,7 @@ public class PauseScript : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        if (pauseAction.WasPressedThisFrame())
         {
             TogglePause();
         }
