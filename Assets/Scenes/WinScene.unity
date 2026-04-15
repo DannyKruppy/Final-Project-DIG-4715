@@ -1234,6 +1234,10 @@ MonoBehaviour:
   clickSound: {fileID: 8300000, guid: 0e6a1e293155ba645b7b917f68d4974a, type: 3}
   hoverSound: {fileID: 8300000, guid: c9b9771b8c939e647be86e411775af46, type: 3}
   titleMusic: {fileID: 0}
+  keyboardImage: {fileID: 0}
+  controllerImage: {fileID: 0}
+  mechanicsPanel: {fileID: 0}
+  obstaclesPanel: {fileID: 0}
 --- !u!114 &977017745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1389,6 +1393,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Win
   audioSource: {fileID: 81318192}
   WinSFX: {fileID: 8300000, guid: 8dd8dc4609c92ee48bdb16b88d267f1b, type: 3}
+--- !u!1 &977406124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 977406126}
+  - component: {fileID: 977406125}
+  m_Layer: 0
+  m_Name: MouseEnable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &977406125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977406124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a186ee6aa164ccc4da2dd77fc2791fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseEnable
+--- !u!4 &977406126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977406124}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 482.9033, y: 286.38, z: -712.6538}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1527515743
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,3 +2095,4 @@ SceneRoots:
   - {fileID: 81318193}
   - {fileID: 1896578329}
   - {fileID: 1527515746}
+  - {fileID: 977406126}
