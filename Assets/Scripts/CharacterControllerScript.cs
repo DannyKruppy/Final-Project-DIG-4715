@@ -11,6 +11,9 @@ public class CharacterControllerScript : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip jumpSound;
 
+    //VFX
+    [SerializeField] private ParticleSystem jumpParticles;
+
     // Input Actions
     public InputAction moveAction;
     //public InputAction lookAction;
@@ -169,6 +172,7 @@ public class CharacterControllerScript : MonoBehaviour
         if (controller.isGrounded)
         {
             velocity.y = jumpVel;
+            jumpParticles.Play();
             audioSource.PlayOneShot(jumpSound); // JADON
         }
     }
