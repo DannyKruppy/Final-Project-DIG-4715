@@ -67,7 +67,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6138695dde4a148a363f7febe55a42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Key
-  doorLock: {fileID: 0}
+  keyColor: orange
+  audioSource: {fileID: 0}
+  pickupSound: {fileID: 0}
 --- !u!1 &2041111375166997962
 GameObject:
   m_ObjectHideFlags: 0
