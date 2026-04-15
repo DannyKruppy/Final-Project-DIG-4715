@@ -1267,10 +1267,26 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Switch
       m_Flags: 0
+    - m_Name: 
+      m_Id: 0c8deb20-3785-48dd-916b-bf51f0888750
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Switch
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 934b0271-5932-4915-b2c3-16a06897902b
+      m_Path: <Gamepad>/rightTrigger
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Switch
+      m_Flags: 0
     m_Flags: 0
-  audioSource: {fileID: 0}
-  startSound: {fileID: 0}
-  endSound: {fileID: 0}
+  audioSource: {fileID: 6486994525260786095}
+  startSound: {fileID: 8300000, guid: 00fd237529a9ead46b98c8ae4ff74b34, type: 3}
+  endSound: {fileID: 8300000, guid: 03b10ee7b125a1544aaddece7662c23f, type: 3}
   pastObjects:
   - {fileID: 2002598256}
   - {fileID: 1858152608}
@@ -1284,9 +1300,9 @@ MonoBehaviour:
   - {fileID: 928262242}
   pastMat: {fileID: 2100000, guid: 981abf7a53e6a964fba6bc48555ec31a, type: 2}
   futureMat: {fileID: 2100000, guid: dfc08c90188302847afb04f628582097, type: 2}
-  player: {fileID: 0}
-  playerPastMat: {fileID: 0}
-  playerFutureMat: {fileID: 0}
+  player: {fileID: 6486994525260786094}
+  playerPastMat: {fileID: 2100000, guid: e1ebccb33be74e240922cf70ff842376, type: 2}
+  playerFutureMat: {fileID: 2100000, guid: 7cb3c2a63fd7f364e8f4dde8de41631d, type: 2}
   pauseManager: {fileID: 500410745}
   maxTime: 8
   drainRate: 3
@@ -11248,7 +11264,7 @@ Camera:
   far clip plane: 1000
   field of view: 85
   orthographic: 1
-  orthographic size: 15.81
+  orthographic size: 22.03
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
