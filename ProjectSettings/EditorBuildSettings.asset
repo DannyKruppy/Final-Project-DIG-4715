@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameplayPrototype.unity
     guid: 372876f73d01527419bc5f5876e7f034
   - enabled: 1
+    path: Assets/Scenes/Level1Blockout.unity
+    guid: 7584e130b5999d04092b6bdbad310246
+  - enabled: 1
     path: Assets/Scenes/Lore.unity
     guid: c2331f43fa4106f47b54f1cba5c182d9
   - enabled: 1
@@ -29,5 +32,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: dc2935accc15e544895a1167cd4b1cd2
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: fefd47c7bb8e673489c151194476c9c4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

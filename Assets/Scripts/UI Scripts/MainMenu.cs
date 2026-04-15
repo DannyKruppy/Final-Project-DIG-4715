@@ -11,6 +11,14 @@ public class MainMenu : MonoBehaviour
 
     public TitleMusic titleMusic;
 
+    [Header("How To Play UI")]
+    public GameObject keyboardImage;
+    public GameObject controllerImage;
+    public GameObject mechanicsPanel;
+    public GameObject obstaclesPanel;
+
+    private GameObject currentOpenPanel;
+
     private void PlayClick()
     {
         audioSource.PlayOneShot(clickSound);
@@ -30,6 +38,23 @@ public class MainMenu : MonoBehaviour
 
         PlayClick();
         StartCoroutine(LoadSceneWithDelay("GameplayPrototype"));
+    }
+
+    public void LevelOne()
+    {
+        if (titleMusic != null)
+        {
+            titleMusic.StopMusic();
+        }
+
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("Level1"));
+    }
+
+    public void LevelSelect()
+    {
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("LevelSelect"));
     }
 
     public void QuitGame()
@@ -74,4 +99,48 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    private void ToggleSection(GameObject target)
+    {
+        // If clicking the same one -> toggle off
+        if (currentOpenPanel == target && target.activeSelf)
+        {
+            target.SetActive(false);
+            currentOpenPanel = null;
+            return;
+        }
+
+        // Hide everything first
+        keyboardImage.SetActive(false);
+        controllerImage.SetActive(false);
+        mechanicsPanel.SetActive(false);
+        obstaclesPanel.SetActive(false);
+
+        // Show selected
+        target.SetActive(true);
+        currentOpenPanel = target;
+    }
+
+    public void ShowKeyboard()
+    {
+        PlayClick();
+        ToggleSection(keyboardImage);
+    }
+
+    public void ShowController()
+    {
+        PlayClick();
+        ToggleSection(controllerImage);
+    }
+
+    public void ShowMechanics()
+    {
+        PlayClick();
+        ToggleSection(mechanicsPanel);
+    }
+
+    public void ShowObstacles()
+    {
+        PlayClick();
+        ToggleSection(obstaclesPanel);
+    }
 }
