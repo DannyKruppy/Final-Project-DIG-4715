@@ -450,6 +450,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6673a928785db4888f1b47436ecd68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeSwitch
+  switchAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 2e5f93cd-6ab9-426d-ae4b-08ad92ff6d17
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  audioSource: {fileID: 0}
+  startSound: {fileID: 0}
+  endSound: {fileID: 0}
   pastObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -463,6 +475,9 @@ MonoBehaviour:
   - {fileID: 0}
   pastMat: {fileID: 2100000, guid: 981abf7a53e6a964fba6bc48555ec31a, type: 2}
   futureMat: {fileID: 2100000, guid: dfc08c90188302847afb04f628582097, type: 2}
+  player: {fileID: 0}
+  playerPastMat: {fileID: 0}
+  playerFutureMat: {fileID: 0}
   pauseManager: {fileID: 500410745}
   maxTime: 8
   drainRate: 3
@@ -994,9 +1009,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d2b3a93cd5ded42b09a8e201674448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseScript
+  pauseAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 549fc175-3c2d-4edb-9589-dab14d278dd8
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   paused: 0
   pauseMenu: {fileID: 585657180}
   gameCanvas: {fileID: 12142313}
+  audioSource: {fileID: 0}
+  clickSound: {fileID: 0}
+  hoverSound: {fileID: 0}
+  musicSource: {fileID: 0}
 --- !u!1 &569272879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,6 +1539,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SwitchTrigger
   controller: {fileID: 1137219917}
   playerOnSwitch: 0
+  audioSource: {fileID: 0}
+  switchSound: {fileID: 0}
 --- !u!1 &791808145
 GameObject:
   m_ObjectHideFlags: 0
@@ -3681,6 +3711,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4fc3269199d0144b14e0b925d7798a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterControllerScript
+  audioSource: {fileID: 0}
+  jumpSound: {fileID: 0}
   moveAction:
     m_Name: Move
     m_Type: 0
@@ -3745,6 +3777,23 @@ MonoBehaviour:
       m_Processors: 
       m_Groups: 
       m_Action: Sprint
+      m_Flags: 0
+    m_Flags: 0
+  jumpAction:
+    m_Name: Jump
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ce42aed6-2c24-4fcb-9410-016693d47c2c
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 8181477c-eee7-443e-a5f7-0dcf93fbb706
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Jump
       m_Flags: 0
     m_Flags: 0
   speed: 10
