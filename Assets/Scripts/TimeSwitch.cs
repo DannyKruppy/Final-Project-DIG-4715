@@ -7,6 +7,11 @@ public class TimeSwitch : MonoBehaviour
 {
     public InputAction switchAction;
 
+    public AudioSource audioSource;
+
+    public AudioClip startSound;
+    public AudioClip endSound;
+
     public GameObject[] pastObjects;
     public GameObject[] futureObjects;
     public GameObject[] persistentObjects;
@@ -136,6 +141,11 @@ public class TimeSwitch : MonoBehaviour
 
     void ApplyState()
     {
+        if (isPast)
+            audioSource.PlayOneShot(endSound, 0.2f);
+        else
+            audioSource.PlayOneShot(startSound, 0.2f);
+
         foreach (GameObject obj in pastObjects)
         {
             obj.SetActive(isPast);

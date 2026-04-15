@@ -751,6 +751,9 @@ MonoBehaviour:
       m_Action: Switch
       m_Flags: 0
     m_Flags: 0
+  audioSource: {fileID: 1141688959}
+  startSound: {fileID: 8300000, guid: 00fd237529a9ead46b98c8ae4ff74b34, type: 3}
+  endSound: {fileID: 8300000, guid: 03b10ee7b125a1544aaddece7662c23f, type: 3}
   pastObjects:
   - {fileID: 2002598256}
   - {fileID: 1858152608}
@@ -1307,8 +1310,8 @@ MonoBehaviour:
       m_Action: Pause
       m_Flags: 0
     - m_Name: 
-      m_Id: 2af9e005-7429-4541-b5d6-45b18824b573
-      m_Path: <Gamepad>/buttonNorth
+      m_Id: 710828b2-9eab-4b8f-b644-83408f8cc601
+      m_Path: <Gamepad>/start
       m_Interactions: 
       m_Processors: 
       m_Groups: 
