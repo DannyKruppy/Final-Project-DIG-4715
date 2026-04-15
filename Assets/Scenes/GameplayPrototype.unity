@@ -752,7 +752,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
   audioSource: {fileID: 1141688959}
-  startSound: {fileID: 8300000, guid: 00fd237529a9ead46b98c8ae4ff74b34, type: 3}
+  startSound: {fileID: 8300000, guid: 4ebe640494ef9fe479f7bc3f6acfef93, type: 3}
   endSound: {fileID: 8300000, guid: 03b10ee7b125a1544aaddece7662c23f, type: 3}
   pastObjects:
   - {fileID: 2002598256}
