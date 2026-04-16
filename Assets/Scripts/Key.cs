@@ -5,6 +5,7 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
     [SerializeField] private string keyColor;
+    [SerializeField] private KeyUI keyUI;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip pickupSound;
 
@@ -24,13 +25,16 @@ public class Key : MonoBehaviour
             switch (keyColor.ToLower())
             {
                 case "blue":
-                    inventoryHandler.BlueKeyGet();
+                    inventoryHandler.BlueKeySet(true);
+                    keyUI.UpdateUI();
                     break;
                 case "orange":
-                    inventoryHandler.OrangeKeyGet();
+                    inventoryHandler.OrangeKeySet(true);
+                    keyUI.UpdateUI();
                     break;
                 case "pink":
-                    inventoryHandler.PinkKeyGet();
+                    inventoryHandler.PinkKeySet(true);
+                    keyUI.UpdateUI();
                     break;
             }
         }
