@@ -36,7 +36,7 @@ public class PauseScript : MonoBehaviour
 
     void Update()
     {
-        if (pauseAction.WasPressedThisFrame())
+        if (pauseAction.triggered)
         {
             TogglePause();
         }

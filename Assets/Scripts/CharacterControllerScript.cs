@@ -60,8 +60,8 @@ public class CharacterControllerScript : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
 
         sprintBarImage = sprintBar.GetComponent<Image>();
         sprint = maxSprint;

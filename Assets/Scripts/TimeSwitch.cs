@@ -81,7 +81,10 @@ public class TimeSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (switchAction.WasPressedThisFrame() && pauseManager.paused == false && timeLocked == false)
+        if (pauseManager.paused)
+            return; // ✅ stop EVERYTHING while paused
+
+        if (switchAction.triggered && !timeLocked)
         {
             isPast = !isPast;
             ApplyState();
@@ -94,13 +97,9 @@ public class TimeSwitch : MonoBehaviour
         else if (time >= maxTime / 2f)
             timeLocked = false;
 
-        if (timeLocked == true)
-            timeBarImage.color = redColor;
-        else
-            timeBarImage.color = blueColor;
+        timeBarImage.color = timeLocked ? redColor : blueColor;
 
         Recharge();
-
         timeBarImage.fillAmount = time / maxTime;
     }
 

@@ -2088,7 +2088,7 @@ MonoBehaviour:
   clickSound: {fileID: 8300000, guid: 0e6a1e293155ba645b7b917f68d4974a, type: 3}
   hoverSound: {fileID: 8300000, guid: c9b9771b8c939e647be86e411775af46, type: 3}
   titleMusic: {fileID: 0}
-  keyboardImage: {fileID: 0}
+  keyboardImage: {fileID: 71325318}
   controllerImage: {fileID: 51598294}
   mechanicsPanel: {fileID: 2140567876}
   obstaclesPanel: {fileID: 1402010249}
