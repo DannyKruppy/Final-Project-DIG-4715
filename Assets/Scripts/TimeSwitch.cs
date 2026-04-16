@@ -18,6 +18,7 @@ public class TimeSwitch : MonoBehaviour
 
     public Material pastMat;
     public Material futureMat;
+    public Material persistentMat;
 
     // JADON
     public GameObject player;
@@ -70,9 +71,10 @@ public class TimeSwitch : MonoBehaviour
         {
             obj.GetComponent<Renderer>().sharedMaterial = pastMat;
         }
+
         foreach (GameObject obj in persistentObjects)
         {
-            obj.GetComponent<Renderer>().sharedMaterial = pastMat;
+            obj.GetComponent<Renderer>().sharedMaterial = persistentMat;
         }
     }
 
@@ -155,11 +157,6 @@ public class TimeSwitch : MonoBehaviour
         foreach (GameObject obj in futureObjects)
         {
             obj.SetActive(!isPast);
-            SetMat(obj);
-        }
-
-        foreach (GameObject obj in persistentObjects)
-        {
             SetMat(obj);
         }
 

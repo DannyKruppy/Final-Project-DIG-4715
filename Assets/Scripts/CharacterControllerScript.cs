@@ -7,36 +7,27 @@ public class CharacterControllerScript : MonoBehaviour
 {
     private CharacterController controller;
 
-    // JADON
     public AudioSource audioSource;
     public AudioClip jumpSound;
 
-    //VFX
     [SerializeField] private ParticleSystem jumpParticles;
 
-    // Input Actions
     public InputAction moveAction;
-    //public InputAction lookAction;
     public InputAction sprintAction;
     public InputAction jumpAction;
 
-    //private Vector2 lookInput;
     private Vector2 moveInput;
 
-    //public float mouseSens = 1;
     public float speed = 4.0f;
     public float sprintSpeed = 7.0f;
     public float gravity = -9.8f;
     public float jumpVel = 40;
-    Vector3 velocity;
 
+    Vector3 velocity;
     private Vector3 currentVelocity;
+
     public float acceleration = 10f;
     public float deceleration = 12f;
-
-    //public Transform mainCamera;
-
-    //private float xRotation;
 
     public float maxSprint = 8f;
     public float drainRate = 1f;
@@ -49,11 +40,12 @@ public class CharacterControllerScript : MonoBehaviour
     public GameObject sprintBar;
     private Image sprintBarImage;
 
+    private MovingPlatform currentPlatform;
+
     void OnEnable()
     {
         moveAction.Enable();
         jumpAction.Enable();
-        //lookAction.Enable();
         sprintAction.Enable();
     }
 
@@ -61,7 +53,6 @@ public class CharacterControllerScript : MonoBehaviour
     {
         moveAction.Disable();
         jumpAction.Disable();
-        //lookAction.Disable();
         sprintAction.Disable();
     }
 
@@ -73,15 +64,25 @@ public class CharacterControllerScript : MonoBehaviour
         Cursor.visible = false;
 
         sprintBarImage = sprintBar.GetComponent<Image>();
-
         sprint = maxSprint;
     }
 
     void Update()
     {
-        Movement();
-        //Look();
-        Gravity();
+        if (!controller.isGrounded)
+        {
+            currentPlatform = null;
+        }
+        else
+        {
+            ValidatePlatform();
+        }
+
+        Vector3 move = Movement();
+        Vector3 grav = Gravity();
+        Vector3 platformMove = GetPlatformMovement();
+
+        controller.Move((move + grav) * Time.deltaTime + platformMove);
 
         if (jumpAction.WasPressedThisFrame())
         {
@@ -89,14 +90,10 @@ public class CharacterControllerScript : MonoBehaviour
         }
 
         Recharge();
-
         sprintBarImage.fillAmount = sprint / maxSprint;
-
-        /*if (Keyboard.current.escapeKey.wasPressedThisFrame)
-            SceneManager.LoadSceneAsync("Title");*/
     }
 
-    void Movement()
+    Vector3 Movement()
     {
         moveInput = moveAction.ReadValue<Vector2>();
 
@@ -117,30 +114,14 @@ public class CharacterControllerScript : MonoBehaviour
         }
 
         Vector3 targetVelocity = moveDirection * targetSpeed;
-
         float rate = isMoving ? acceleration : deceleration;
 
         currentVelocity = Vector3.MoveTowards(currentVelocity, targetVelocity, rate * Time.deltaTime);
 
-        controller.Move(currentVelocity * Time.deltaTime);
+        return currentVelocity;
     }
 
-    /*void Look()
-    {
-        lookInput = lookAction.ReadValue<Vector2>();
-
-        float lookX = lookInput.x * mouseSens;
-        float lookY = lookInput.y * mouseSens;
-
-        transform.Rotate(Vector3.up * lookX);
-
-        xRotation -= lookY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-
-        mainCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-    }*/
-
-    void Gravity()
+    Vector3 Gravity()
     {
         if (controller.isGrounded && velocity.y < 0)
         {
@@ -148,7 +129,18 @@ public class CharacterControllerScript : MonoBehaviour
         }
 
         velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
+
+        return velocity;
+    }
+
+    Vector3 GetPlatformMovement()
+    {
+        if (currentPlatform != null && controller.isGrounded)
+        {
+            return currentPlatform.DeltaMovement;
+        }
+
+        return Vector3.zero;
     }
 
     void Recharge()
@@ -173,7 +165,33 @@ public class CharacterControllerScript : MonoBehaviour
         {
             velocity.y = jumpVel;
             jumpParticles.Play();
-            audioSource.PlayOneShot(jumpSound); // JADON
+            audioSource.PlayOneShot(jumpSound);
         }
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.collider.TryGetComponent<MovingPlatform>(out MovingPlatform platform))
+        {
+            currentPlatform = platform;
+            Debug.Log("Platform detected");
+        }
+    }
+
+    void ValidatePlatform()
+    {
+        Ray ray = new Ray(transform.position, Vector3.down);
+        float distance = controller.height / 2f + 0.3f;
+
+        if (Physics.Raycast(ray, out RaycastHit hit, distance))
+        {
+            if (hit.collider.TryGetComponent<MovingPlatform>(out MovingPlatform platform))
+            {
+                currentPlatform = platform;
+                return;
+            }
+        }
+
+        currentPlatform = null;
     }
 }

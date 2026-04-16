@@ -1412,6 +1412,7 @@ MonoBehaviour:
   - {fileID: 1901247278}
   pastMat: {fileID: 2100000, guid: 981abf7a53e6a964fba6bc48555ec31a, type: 2}
   futureMat: {fileID: 2100000, guid: dfc08c90188302847afb04f628582097, type: 2}
+  persistentMat: {fileID: 2100000, guid: d76d5dba59c8a824a8170635648a356c, type: 2}
   player: {fileID: 6486994525260786094}
   playerPastMat: {fileID: 2100000, guid: e1ebccb33be74e240922cf70ff842376, type: 2}
   playerFutureMat: {fileID: 2100000, guid: 7cb3c2a63fd7f364e8f4dde8de41631d, type: 2}
@@ -6762,7 +6763,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MovingPlatform
   pointA: {x: 20, y: 0, z: 0}
   pointB: {x: 20, y: 0, z: -5}
-  speed: 5
+  speed: 10
   pauseTime: 2
 --- !u!65 &1231183565
 BoxCollider:
@@ -11624,9 +11625,9 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
   speed: 10
-  sprintSpeed: 20
-  gravity: -20
-  jumpVel: 12
+  sprintSpeed: 15
+  gravity: -15
+  jumpVel: 8
   acceleration: 100
   deceleration: 75
   maxSprint: 2
