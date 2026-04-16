@@ -1525,6 +1525,7 @@ MonoBehaviour:
   - {fileID: 1901247278}
   pastMat: {fileID: 2100000, guid: 981abf7a53e6a964fba6bc48555ec31a, type: 2}
   futureMat: {fileID: 2100000, guid: dfc08c90188302847afb04f628582097, type: 2}
+  persistentMat: {fileID: 0}
   player: {fileID: 6486994525260786094}
   playerPastMat: {fileID: 2100000, guid: e1ebccb33be74e240922cf70ff842376, type: 2}
   playerFutureMat: {fileID: 2100000, guid: 7cb3c2a63fd7f364e8f4dde8de41631d, type: 2}
@@ -10263,9 +10264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a2de6b91eafe7a43960a1eac357412d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryHandler
-  blueKey: 0
-  orangeKey: 0
-  pinkKey: 0
 --- !u!4 &1877494269
 Transform:
   m_ObjectHideFlags: 0
@@ -11932,7 +11930,7 @@ Transform:
   m_GameObject: {fileID: 6486994525260786094}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.54, z: -10}
+  m_LocalPosition: {x: 0, y: 4.94, z: 232.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
