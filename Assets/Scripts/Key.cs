@@ -24,13 +24,13 @@ public class Key : MonoBehaviour
             switch (keyColor.ToLower())
             {
                 case "blue":
-                    inventoryHandler.blueKey = true;
+                    inventoryHandler.BlueKeyGet();
                     break;
                 case "orange":
-                    inventoryHandler.orangeKey = true;
+                    inventoryHandler.OrangeKeyGet();
                     break;
                 case "pink":
-                    inventoryHandler.pinkKey = true;
+                    inventoryHandler.PinkKeyGet();
                     break;
             }
         }
