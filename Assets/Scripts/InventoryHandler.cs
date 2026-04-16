@@ -4,9 +4,9 @@ public class InventoryHandler : MonoBehaviour
 {
     public static InventoryHandler Instance { get; private set; }
 
-    public bool blueKey;
-    public bool orangeKey;
-    public bool pinkKey;
+    private bool blueKey;
+    private bool orangeKey;
+    private bool pinkKey;
 
     private void Awake()
     {
@@ -19,5 +19,35 @@ public class InventoryHandler : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void BlueKeySet(bool b)
+    {
+        blueKey = b;
+    }
+
+    public bool BlueKeyGet()
+    {
+        return(blueKey);
+    }
+
+    public void OrangeKeySet(bool b)
+    {
+        orangeKey = b;
+    }
+
+    public bool OrangeKeyGet()
+    {
+        return (orangeKey);
+    }
+
+    public void PinkKeySet(bool b)
+    {
+        pinkKey = b;
+    }
+
+    public bool PinkKeyGet()
+    {
+        return (pinkKey);
     }
 }

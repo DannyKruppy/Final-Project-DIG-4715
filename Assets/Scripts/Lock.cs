@@ -20,7 +20,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
             switch (lockColor.ToLower())
             {
                 case "blue":
-                    if (inventoryHandler.blueKey)
+                    if (inventoryHandler.BlueKeyGet())
                     {
                         //play animation
 
@@ -32,7 +32,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
                     }
                         break;
                 case "orange":
-                    if (inventoryHandler.orangeKey)
+                    if (inventoryHandler.OrangeKeyGet())
                     {
                         //play animation
 
@@ -43,7 +43,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
                     }
                         break;
                 case "pink":
-                    if (inventoryHandler.pinkKey)
+                    if (inventoryHandler.PinkKeyGet())
                     {
                         //play animation
 
