@@ -37,7 +37,7 @@ public class MainMenu : MonoBehaviour
         }
 
         PlayClick();
-        StartCoroutine(LoadSceneWithDelay("GameplayPrototype"));
+        StartCoroutine(LoadSceneWithDelay("Level1Blockout"));
     }
 
     public void LevelOne()
@@ -48,7 +48,7 @@ public class MainMenu : MonoBehaviour
         }
 
         PlayClick();
-        StartCoroutine(LoadSceneWithDelay("Level1"));
+        StartCoroutine(LoadSceneWithDelay("Level1Blockout"));
     }
 
     public void LevelSelect()
