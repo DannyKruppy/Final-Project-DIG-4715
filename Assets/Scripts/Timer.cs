@@ -29,6 +29,9 @@ public class Timer : MonoBehaviour
     [Header("Player Movement Script")]
     public CharacterControllerScript playerMovement;
 
+    [Header("Level Info")]
+    public string levelName; // "Level1", "Level2", "Level3"
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -75,6 +78,50 @@ public class Timer : MonoBehaviour
         count = maxCount;
         gameOverTriggered = false;
         warningStarted = false;
+    }
+
+    // When Player Wins
+    public void CompleteLevel()
+    {
+        float timeTaken = maxCount - count;
+
+        SaveLevelTime(timeTaken);
+
+        if (levelName == "Level3") { CheckAndSaveTotalTime(); }
+    }
+
+    // Save Best Time Per Level
+    void SaveLevelTime(float timeTaken)
+    {
+        string key = levelName + "_BestTime";
+
+        float currentBest = PlayerPrefs.GetFloat(key, float.MaxValue);
+
+        if (timeTaken < currentBest)
+        {
+            PlayerPrefs.SetFloat(key, timeTaken);
+            PlayerPrefs.Save();
+        }
+    }
+
+    // Total Best Time (Highscore) System
+    void CheckAndSaveTotalTime()
+    {
+        float t1 = PlayerPrefs.GetFloat("Level1_BestTime", float.MaxValue);
+        float t2 = PlayerPrefs.GetFloat("Level2_BestTime", float.MaxValue);
+        float t3 = PlayerPrefs.GetFloat("Level3_BestTime", float.MaxValue);
+
+        if (t1 == float.MaxValue || t2 == float.MaxValue || t3== float.MaxValue) { return; }
+
+        float totalTime = t1 + t2 + t3;
+
+        float bestTotal = PlayerPrefs.GetFloat("TotalBestTime", float.MaxValue);
+
+        if (totalTime < bestTotal)
+        {
+            PlayerPrefs.SetFloat("TotalBestTime", totalTime);
+            PlayerPrefs.Save();
+        }
     }
 
     private IEnumerator WarningTickRoutine()

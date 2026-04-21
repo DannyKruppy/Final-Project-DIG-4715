@@ -2861,6 +2861,7 @@ MonoBehaviour:
   gameOverSound: {fileID: 8300000, guid: cde7105af7bbe7f4a909c6e5750fbcea, type: 3}
   warningTickSound: {fileID: 8300000, guid: c5f91c97fdb7edb4682a503b7169aec2, type: 3}
   playerMovement: {fileID: 6486994525260786101}
+  levelName: Level1
 --- !u!222 &842564703
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5820,6 +5821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 842564702}
     - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
       propertyPath: sceneName
       value: WinScene
