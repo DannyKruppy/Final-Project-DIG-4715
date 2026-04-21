@@ -68,8 +68,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Key
   keyColor: pink
+  keyUI: {fileID: 0}
   audioSource: {fileID: 0}
-  pickupSound: {fileID: 0}
+  pickupSound: {fileID: 8300000, guid: 3ba8c53b2a419ed4da62ea49b504a4d3, type: 3}
 --- !u!1001 &1033054548437263848
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -71,7 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   lockColor: orange
   lockModel: {fileID: 7369962099136086546}
-  explosionEffect: {fileID: 0}
+  explosionEffect: {fileID: 8528003185056223253, guid: 34edc45f1fe45244abf0dba93f87a959, type: 3}
 --- !u!135 &236894687856198173
 SphereCollider:
   m_ObjectHideFlags: 0
