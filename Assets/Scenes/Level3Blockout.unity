@@ -9469,6 +9469,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Move
       m_Flags: 8
+    - m_Name: 
+      m_Id: cab13f1b-b81c-4847-9baf-74f01e5c6b12
+      m_Path: <Gamepad>/leftStick
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 0
     m_Flags: 0
   sprintAction:
     m_Name: Sprint
@@ -9498,6 +9506,14 @@ MonoBehaviour:
     - m_Name: 
       m_Id: 67527fc4-1ba8-4890-bb6b-40c4f3d012f2
       m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Jump
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 416d6368-587f-49c0-a098-7afc598e9b98
+      m_Path: <Gamepad>/buttonSouth
       m_Interactions: 
       m_Processors: 
       m_Groups: 
