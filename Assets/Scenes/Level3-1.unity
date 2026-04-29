@@ -9538,7 +9538,7 @@ MonoBehaviour:
   drainRate: 1
   rechargeRate: 0.5
   sprintDelay: 1
-  coyoteTime: 0.2
+  coyoteTime: 0.1
   sprintBar: {fileID: 272159451}
 --- !u!143 &2264269122702831565
 CharacterController:
