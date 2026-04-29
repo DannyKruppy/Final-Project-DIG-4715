@@ -37,7 +37,7 @@ public class CharacterControllerScript : MonoBehaviour
     private float sprint;
     private float counter;
 
-    public float coyoteTime = 0.2f;
+    public float coyoteTime = 0.1f;
     private float coyoteCounter;
 
     public GameObject sprintBar;
