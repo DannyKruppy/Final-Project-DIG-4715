@@ -32,11 +32,11 @@ RenderSettings:
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
-  m_DefaultReflectionMode: 1
+  m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
-  m_CustomReflection: {fileID: 2800000, guid: b4378e9e0974603418bb655c3206e04c, type: 3}
+  m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 448319544}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraScript
   target: {fileID: 3038795187297624233}
   ySmoothTime: 0.4
-  horizontalSmoothTime: 0
+  horizontalSmoothTime: 1
 --- !u!4 &114231403
 Transform:
   m_ObjectHideFlags: 0
@@ -489,11 +489,11 @@ MonoBehaviour:
   startSound: {fileID: 8300000, guid: 4ebe640494ef9fe479f7bc3f6acfef93, type: 3}
   endSound: {fileID: 8300000, guid: 03b10ee7b125a1544aaddece7662c23f, type: 3}
   pastObjects:
-  - {fileID: 1405717071}
+  - {fileID: 1727114129}
   futureObjects:
-  - {fileID: 1216779171}
+  - {fileID: 1279592025}
   persistentObjects:
-  - {fileID: 2139579361}
+  - {fileID: 1413280438}
   pastMat: {fileID: 2100000, guid: 724623a7f210f1b4b8584b7708d3c8f5, type: 2}
   futureMat: {fileID: 2100000, guid: 7456491ba20926a4ababda1278b0f0c8, type: 2}
   persistentMat: {fileID: 2100000, guid: 917ffca929b61fb42b3555f482278e18, type: 2}
@@ -2420,7 +2420,7 @@ GameObject:
   - component: {fileID: 1279592028}
   - component: {fileID: 1279592027}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: FuturePlatform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3152,7 +3152,7 @@ GameObject:
   - component: {fileID: 1727114132}
   - component: {fileID: 1727114131}
   m_Layer: 0
-  m_Name: Platform (1)
+  m_Name: PastPlatform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1329,7 +1329,7 @@ GameObject:
   - component: {fileID: 860477938}
   - component: {fileID: 860477937}
   m_Layer: 5
-  m_Name: WANTED
+  m_Name: ENDGAME
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
