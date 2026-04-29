@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c06791a4f441fa4e84967ed923f6051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraScript
-  target: {fileID: 3038795187297624233}
+  target: {fileID: 1911448595385610436}
   ySmoothTime: 0.4
   horizontalSmoothTime: 0
 --- !u!4 &114231403
@@ -817,7 +817,7 @@ MonoBehaviour:
   pastMat: {fileID: 2100000, guid: 981abf7a53e6a964fba6bc48555ec31a, type: 2}
   futureMat: {fileID: 2100000, guid: dfc08c90188302847afb04f628582097, type: 2}
   persistentMat: {fileID: 2100000, guid: 981abf7a53e6a964fba6bc48555ec31a, type: 2}
-  player: {fileID: 6486994525260786094}
+  player: {fileID: 2084999452}
   playerPastMat: {fileID: 2100000, guid: e1ebccb33be74e240922cf70ff842376, type: 2}
   playerFutureMat: {fileID: 2100000, guid: 20fc117cb84c08445be2e619da31475f, type: 2}
   pauseManager: {fileID: 500410745}
@@ -2857,10 +2857,10 @@ MonoBehaviour:
   maxCount: 100
   timerBar: {fileID: 578435022}
   timerText: {fileID: 842564701}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  overtimeColor: {r: 1, g: 0, b: 0, a: 1}
   audioSource: {fileID: 495907558}
-  gameOverSound: {fileID: 8300000, guid: cde7105af7bbe7f4a909c6e5750fbcea, type: 3}
   warningTickSound: {fileID: 8300000, guid: c5f91c97fdb7edb4682a503b7169aec2, type: 3}
-  playerMovement: {fileID: 6486994525260786101}
   levelName: Level1
 --- !u!222 &842564703
 CanvasRenderer:
@@ -3817,7 +3817,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -131.32, y: 72.48999}
+  m_AnchoredPosition: {x: -125.06, y: 72.48999}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118945604
@@ -4662,7 +4662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -141.20001, y: 50.528}
+  m_AnchoredPosition: {x: -125.06, y: 50.528}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337286178
@@ -6839,6 +6839,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &2084999452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9156124928225349764, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
+  m_PrefabInstance: {fileID: 1911448595385610434}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2134061312
 GameObject:
   m_ObjectHideFlags: 0
@@ -6961,6 +6966,14 @@ PrefabInstance:
       propertyPath: sprintBar
       value: 
       objectReference: {fileID: 272159451}
+    - target: {fileID: 1775923133311911822, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
+      propertyPath: sprintBar
+      value: 
+      objectReference: {fileID: 1337286176}
+    - target: {fileID: 3131414583884180598, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1030721224}
     - target: {fileID: 7901071009401353646, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7014,6 +7027,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
+--- !u!4 &1911448595385610436 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8218368123313265578, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
+  m_PrefabInstance: {fileID: 1911448595385610434}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &2750624357811431777
 Camera:
   m_ObjectHideFlags: 0
@@ -7065,11 +7083,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &3038795187297624233 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7901071009401353646, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
-  m_PrefabInstance: {fileID: 1911448595385610434}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4977473721863718756
 Transform:
   m_ObjectHideFlags: 0
@@ -7085,22 +7098,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 114231403}
   m_LocalEulerAnglesHint: {x: 51.089, y: 0, z: 0}
---- !u!1 &6486994525260786094 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7902218678705206903, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
-  m_PrefabInstance: {fileID: 1911448595385610434}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6486994525260786101 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1406354818681397704, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
-  m_PrefabInstance: {fileID: 1911448595385610434}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6486994525260786094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4fc3269199d0144b14e0b925d7798a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterControllerScript
 --- !u!114 &6995505240485864707
 MonoBehaviour:
   m_ObjectHideFlags: 0
