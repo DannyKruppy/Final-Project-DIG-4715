@@ -37,6 +37,9 @@ public class CharacterControllerScript : MonoBehaviour
     private float sprint;
     private float counter;
 
+    public float coyoteTime = 0.1f;
+    private float coyoteCounter;
+
     public GameObject sprintBar;
     private Image sprintBarImage;
 
@@ -91,6 +94,15 @@ public class CharacterControllerScript : MonoBehaviour
 
         Recharge();
         sprintBarImage.fillAmount = sprint / maxSprint;
+
+        if (controller.isGrounded)
+        {
+            coyoteCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteCounter -= Time.deltaTime;
+        }
     }
 
     Vector3 Movement()
@@ -161,11 +173,13 @@ public class CharacterControllerScript : MonoBehaviour
 
     void Jump()
     {
-        if (controller.isGrounded)
+        if (coyoteCounter > 0f)
         {
             velocity.y = jumpVel;
             jumpParticles.Play();
             audioSource.PlayOneShot(jumpSound);
+
+            coyoteCounter = 0f;
         }
     }
 
