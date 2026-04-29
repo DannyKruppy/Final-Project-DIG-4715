@@ -25,7 +25,9 @@ public class Timer : MonoBehaviour
     private Coroutine warningCoroutine;
 
     [Header("Level Info")]
-    public string levelName; // e.g. "Lvl1", "Lvl2", etc.
+    public string levelName; // e.g. "Level1", "Level2", "Level3"
+
+    private bool levelCompleted = false;
 
     void Start()
     {
@@ -35,38 +37,27 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        count -= Time.deltaTime;
+        if (!levelCompleted)
+            count -= Time.deltaTime;
 
-        // Start warning ticks near time limit
-        if (count <= 10f && !warningStarted)
+        // Warning ticks
+        if (count <= 10f && count > 0 && !warningStarted)
         {
             warningStarted = true;
             warningCoroutine = StartCoroutine(WarningTickRoutine());
         }
 
-        // Overtime visual (count < 0)
-        if (count < 0)
-        {
-            timerText.color = overtimeColor;
-        }
-        else
-        {
-            timerText.color = normalColor;
-        }
+        // Color change for overtime
+        timerText.color = (count < 0) ? overtimeColor : normalColor;
 
-        if (count <= 0)
+        // Stop audio at 0
+        if (count <= 0 && warningCoroutine != null)
         {
-            // Stop ticking sound instantly
-            if (warningCoroutine != null)
-            {
-                StopCoroutine(warningCoroutine);
-                warningCoroutine = null;
-            }
-
+            StopCoroutine(warningCoroutine);
+            warningCoroutine = null;
             audioSource.Stop();
         }
 
-        // UI display (show real time remaining / overtime)
         timerBarImage.fillAmount = Mathf.Clamp01(count / maxCount);
         timerText.text = Mathf.Abs(count).ToString("F2");
     }
@@ -75,60 +66,45 @@ public class Timer : MonoBehaviour
     {
         count = maxCount;
         warningStarted = false;
+        levelCompleted = false;
         timerText.color = normalColor;
     }
 
     // =========================
-    // CALL WHEN PLAYER COMPLETES LEVEL
+    // CALL WHEN LEVEL IS COMPLETED
     // =========================
     public void CompleteLevel()
     {
-        // TRUE TIME TAKEN (even if overtime)
+        if (levelCompleted) return;
+
+        levelCompleted = true;
+
         float timeTaken = Mathf.Max(0, maxCount - count);
 
         SaveLevelTime(timeTaken);
+
+        Debug.Log("Saved: " + levelName + "_BestTime = " + timeTaken);
     }
 
     // =========================
-    // SAVE TIME PER LEVEL
+    // SAVE BEST TIME
     // =========================
     void SaveLevelTime(float timeTaken)
     {
-        string key = levelName + "_Time";
+        string key = levelName + "_BestTime";
 
-        // Always overwrite (we want THIS run, not best run)
-        PlayerPrefs.SetFloat(key, timeTaken);
-        PlayerPrefs.Save();
-    }
+        float currentBest = PlayerPrefs.GetFloat(key, float.MaxValue);
 
-    // =========================
-    // HUB CHECK SYSTEM (call this from Hub)
-    // =========================
-    public static bool HasCompletedAllLevels(string[] levelNames)
-    {
-        foreach (string lvl in levelNames)
+        if (timeTaken < currentBest)
         {
-            if (!PlayerPrefs.HasKey(lvl + "_Time"))
-                return false;
+            PlayerPrefs.SetFloat(key, timeTaken);
+            PlayerPrefs.Save();
         }
-        return true;
-    }
-
-    public static bool AllLevelsUnderTime(string[] levelNames, float[] maxTimes)
-    {
-        for (int i = 0; i < levelNames.Length; i++)
-        {
-            float time = PlayerPrefs.GetFloat(levelNames[i] + "_Time", float.MaxValue);
-
-            if (time > maxTimes[i])
-                return false;
-        }
-        return true;
     }
 
     private IEnumerator WarningTickRoutine()
     {
-        while (count > 0)
+        while (count > 0 && !levelCompleted)
         {
             audioSource.PlayOneShot(warningTickSound);
 
