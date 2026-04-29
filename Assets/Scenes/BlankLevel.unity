@@ -774,7 +774,23 @@ MonoBehaviour:
     m_Id: 963972a2-cde3-4585-8207-31d932a92b2d
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 52c7d394-3c0c-4939-b6a6-bc2115303a60
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Pause
+      m_Flags: 0
+    - m_Name: 
+      m_Id: d901278c-a305-49b8-9c41-b2a41402c16e
+      m_Path: <Gamepad>/start
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Pause
+      m_Flags: 0
     m_Flags: 0
   paused: 0
   pauseMenu: {fileID: 585657180}
@@ -4193,6 +4209,67 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 4cabf5dbf47bba543a4f12e0a406484e, type: 2}
+--- !u!1001 &8592142156116380291
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6538253753901100442, guid: f06bbc02fb534ee48aec297deba82456, type: 3}
+      propertyPath: m_Name
+      value: Checkpoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672975762353940955, guid: f06bbc02fb534ee48aec297deba82456, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672975762353940955, guid: f06bbc02fb534ee48aec297deba82456, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.82523
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672975762353940955, guid: f06bbc02fb534ee48aec297deba82456, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.15518
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672975762353940955, guid: f06bbc02fb534ee48aec297deba82456, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672975762353940955, guid: f06bbc02fb534ee48aec297deba82456, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672975762353940955, guid: f06bbc02fb534ee48aec297deba82456, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672975762353940955, guid: f06bbc02fb534ee48aec297deba82456, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672975762353940955, guid: f06bbc02fb534ee48aec297deba82456, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672975762353940955, guid: f06bbc02fb534ee48aec297deba82456, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672975762353940955, guid: f06bbc02fb534ee48aec297deba82456, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208743145047902730, guid: f06bbc02fb534ee48aec297deba82456, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1030721224}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f06bbc02fb534ee48aec297deba82456, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -4214,3 +4291,4 @@ SceneRoots:
   - {fileID: 882834705}
   - {fileID: 594736800}
   - {fileID: 1927015417}
+  - {fileID: 8592142156116380291}
