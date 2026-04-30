@@ -8,6 +8,9 @@ public class HubUI : MonoBehaviour
     public TextMeshPro level3Text;
     public TextMeshPro totalText;
 
+    [Header("Max Time Limits Per Level")]
+    public float[] maxTimes = new float[3];
+
     void Start()
     {
         float t1 = PlayerPrefs.GetFloat("Level1_BestTime", -1f);
@@ -15,10 +18,34 @@ public class HubUI : MonoBehaviour
         float t3 = PlayerPrefs.GetFloat("Level3_BestTime", -1f);
         float total = PlayerPrefs.GetFloat("TotalBestTime", -1f);
 
-        level1Text.text = FormatTime("Level 1", t1);
-        level2Text.text = FormatTime("Level 2", t2);
-        level3Text.text = FormatTime("Level 3", t3);
+        SetLevelText(level1Text, "Level 1", t1, maxTimes[0]);
+        SetLevelText(level2Text, "Level 2", t2, maxTimes[1]);
+        SetLevelText(level3Text, "Level 3", t3, maxTimes[2]);
         totalText.text = FormatTime("Total", total);
+    }
+
+    void SetLevelText(TextMeshPro textObj, string label, float time, float maxTime)
+    {
+        textObj.text = FormatTime(label, time);
+
+        if (time == null || time < 0)
+        {
+            textObj.color = Color.white; // Level not completed yet
+            return;
+        }
+
+        // Green = under limit (good run)
+        if (time <= maxTime)
+        {
+            textObj.color = Color.green;
+        }
+        // Red = over limit (bad run)
+        else
+        {
+            textObj.color = Color.red;
+        }
+
+
     }
 
     string FormatTime(string label, float time)
