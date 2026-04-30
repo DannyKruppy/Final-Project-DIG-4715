@@ -1,9 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEngine.Rendering.BoolParameter;
 using System.Collections;
-using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -15,82 +13,82 @@ public class Timer : MonoBehaviour
 
     public TextMeshProUGUI timerText;
 
+    [Header("UI Colors")]
+    public Color normalColor = Color.white;
+    public Color overtimeColor = Color.red;
+
     [Header("Audio")]
     public AudioSource audioSource;
-    public AudioClip gameOverSound;
     public AudioClip warningTickSound;
 
     private bool warningStarted = false;
-
-    private bool gameOverTriggered = false;
-
     private Coroutine warningCoroutine;
-    
-    [Header("Player Movement Script")]
-    public CharacterControllerScript playerMovement;
 
     [Header("Level Info")]
-    public string levelName; // "Level1", "Level2", "Level3"
+    public string levelName; // e.g. "Level1", "Level2", "Level3"
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private bool levelCompleted = false;
+
     void Start()
     {
         timerBarImage = timerBar.GetComponent<Image>();
         resetTimer();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (gameOverTriggered) return; 
-        count -= Time.deltaTime;
+        if (!levelCompleted)
+            count -= Time.deltaTime;
 
+        // Warning ticks
         if (count <= 10f && count > 0 && !warningStarted)
         {
             warningStarted = true;
             warningCoroutine = StartCoroutine(WarningTickRoutine());
         }
 
-        if (count <= 0)
+        // Color change for overtime
+        timerText.color = (count < 0) ? overtimeColor : normalColor;
+
+        // Stop audio at 0
+        if (count <= 0 && warningCoroutine != null)
         {
-            count = 0;
-            gameOverTriggered = true;
-            playerMovement.enabled = false;
-
-            if (warningCoroutine != null)
-            {
-                StopCoroutine(warningCoroutine);
-                warningCoroutine = null;
-            }
-
-            audioSource.Stop(); // Stop tick sound
-
-            audioSource.PlayOneShot(gameOverSound); // Play Game Over sound
-            StartCoroutine(GameOverRoutine());
+            StopCoroutine(warningCoroutine);
+            warningCoroutine = null;
+            audioSource.Stop();
         }
 
-        timerBarImage.fillAmount = count / maxCount;
-        timerText.text = count.ToString("F2");
+        timerBarImage.fillAmount = Mathf.Clamp01(count / maxCount);
+        timerText.text = Mathf.Abs(count).ToString("F2");
     }
 
     public void resetTimer()
     {
         count = maxCount;
-        gameOverTriggered = false;
         warningStarted = false;
+        levelCompleted = false;
+        timerText.color = normalColor;
     }
 
-    // When Player Wins
+    // =========================
+    // CALL WHEN LEVEL IS COMPLETED
+    // =========================
     public void CompleteLevel()
     {
-        float timeTaken = maxCount - count;
+        if (levelCompleted) return;
+
+        levelCompleted = true;
+
+        float timeTaken = Mathf.Max(0, maxCount - count);
 
         SaveLevelTime(timeTaken);
 
-        if (levelName == "Level3") { CheckAndSaveTotalTime(); }
+        Debug.Log("Saved: " + levelName + "_BestTime = " + timeTaken);
     }
 
-    // Save Best Time Per Level
+    // =========================
+    // SAVE BEST TIME
+    // =========================
     void SaveLevelTime(float timeTaken)
     {
         string key = levelName + "_BestTime";
@@ -104,43 +102,14 @@ public class Timer : MonoBehaviour
         }
     }
 
-    // Total Best Time (Highscore) System
-    void CheckAndSaveTotalTime()
-    {
-        float t1 = PlayerPrefs.GetFloat("Level1_BestTime", float.MaxValue);
-        float t2 = PlayerPrefs.GetFloat("Level2_BestTime", float.MaxValue);
-        float t3 = PlayerPrefs.GetFloat("Level3_BestTime", float.MaxValue);
-
-        if (t1 == float.MaxValue || t2 == float.MaxValue || t3== float.MaxValue) { return; }
-
-        float totalTime = t1 + t2 + t3;
-
-        float bestTotal = PlayerPrefs.GetFloat("TotalBestTime", float.MaxValue);
-
-        if (totalTime < bestTotal)
-        {
-            PlayerPrefs.SetFloat("TotalBestTime", totalTime);
-            PlayerPrefs.Save();
-        }
-    }
-
     private IEnumerator WarningTickRoutine()
     {
-        while (count > 0 && count <= 10f)
+        while (count > 0 && !levelCompleted)
         {
             audioSource.PlayOneShot(warningTickSound);
 
-            // Faster ticking in last 5 seconds
             float waitTime = count <= 5f ? 0.5f : 1f;
             yield return new WaitForSecondsRealtime(waitTime);
         }
-    }
-
-    private IEnumerator GameOverRoutine()
-    {
-        yield return new WaitForSecondsRealtime(2f); // Delay before loading scene
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        SceneManager.LoadScene("GameOver");
     }
 }

@@ -20,7 +20,7 @@ public class Key : MonoBehaviour
     {
         audioSource.PlayOneShot(pickupSound);
 
-        if(keyColor != null)
+        if(keyColor != null && other.tag == "Player")
         {
             switch (keyColor.ToLower())
             {

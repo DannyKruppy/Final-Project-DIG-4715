@@ -91,7 +91,7 @@ public class TimeSwitch : MonoBehaviour
 
         if (time <= 0)
             timeLocked = true;
-        else if (time >= maxTime / 2f)
+        else if (time >= maxTime / 4f)
             timeLocked = false;
 
         if (timeLocked == true)
