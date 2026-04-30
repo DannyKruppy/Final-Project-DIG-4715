@@ -75,6 +75,12 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(LoadSceneWithDelay("Controls"));
     }
 
+     public void StoryContinue()
+    {
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("Level0-Hub"));
+    }
+
     public void Lore()
     {
         PlayClick();
