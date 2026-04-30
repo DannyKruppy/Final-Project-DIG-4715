@@ -67,6 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Final-Project-DIG-4715.slnx",
+    "dotnet.defaultSolution": "Final Project DIG 4715.slnx",
     "dotnet.enableWorkspaceBasedDevelopment": false
 }

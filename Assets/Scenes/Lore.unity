@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 422}
-  m_SizeDelta: {x: 1000, y: 50}
+  m_AnchoredPosition: {x: 0, y: 255}
+  m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &380855489
 MonoBehaviour:
@@ -176,19 +176,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The Player is just another person living in this digital dystopian reality.
-    \n\r\nDue to being the scapegoat by a crime syndicate, The Player was stripped
-    of almost everything they owned, their income, and gained a shiny new criminal
-    record. \n\r\nGetting a job now just became near impossible. Times are tough.
-    \n\r\nWalking home from the police station in an artificial rain, The Player
-    sees a television screen advertisement floating in the sky.\n \r\n\u201CRecord
-    Winnings! Top 12 Players Sit Pretty for Life!* Free to Play.\u201D \r\n\u201C*See
-    Endgame\u2019s Official Website for Details\u201D\n\r\n\u201CMaybe there is a
-    chance to get out of this?\u201D The Player thinks. \u201CWith enough money,
-    any criminal record can disappear\u2026 I was cracked in multiplayer lobbies
-    back in the day.\u201D\n\r\nThe Player bursts into a sprint.  \r\nThey take a
-    seat on the barren floor of their empty house, and plug into the internet. \r\nThe
-    download progress bar of the new game hits 100%. \r\n"
+  m_text: "Ace works as protection for a noble family.\n\nOne day, Ace receives a
+    ransom letter from a villain named Diamond. \n\nAce\u2019s daughter was kidnapped!\n\nDiamond
+    is a long time enemy of the noble family. Is this method a means of disarming
+    their protection? \nArmed with a new gadget, Ace is deployed on a mission:\n\nSave
+    your daughter. \nEliminate Diamond. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 26c7476b7189cfe41a3a63d374f23abf, type: 2}
   m_sharedMaterial: {fileID: -8695706289878922041, guid: 26c7476b7189cfe41a3a63d374f23abf, type: 2}
@@ -1072,7 +1064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.05490196}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.09411765}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1244,7 +1236,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941252514}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20.54}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.2081199, y: 2.2081199, z: 2.2081199}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1253,7 +1245,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -539}
+  m_AnchoredPosition: {x: 0, y: -350}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1941252516
