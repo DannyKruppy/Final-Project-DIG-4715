@@ -2130,6 +2130,10 @@ MonoBehaviour:
   level2Text: {fileID: 1373158909}
   level3Text: {fileID: 973796750}
   totalText: {fileID: 1227171649}
+  maxTimes:
+  - 100
+  - 100
+  - 200
 --- !u!1 &448319543
 GameObject:
   m_ObjectHideFlags: 0
@@ -6172,8 +6176,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255600
-  m_fontColor: {r: 0.9411765, g: 1, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
