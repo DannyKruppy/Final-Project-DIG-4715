@@ -15,9 +15,22 @@ public class Respawn : MonoBehaviour
     {
         if (transform.position.y < threshold)
         {
-            controller.enabled = false;
-            transform.position = respawnPoint.position;
-            controller.enabled = true;
+            RespawnPlayer();
         }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Hazard"))
+        {
+            RespawnPlayer();
+        }
+    }
+
+    void RespawnPlayer()
+    {
+        controller.enabled = false;
+        transform.position = respawnPoint.position;
+        controller.enabled = true;
     }
 }
