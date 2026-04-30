@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2.unity
     guid: 92d947fae7d6edd4a8aee9338dc2fc54
   - enabled: 1
-    path: Assets/Scenes/JacksLevel.unity
+    path: Assets/Scenes/Level3.unity
     guid: f43c53564c1c1604bb6150f7e1fbdcd5
   - enabled: 1
     path: Assets/Scenes/Level4.unity
