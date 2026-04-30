@@ -8,7 +8,7 @@ public class Checkpoint : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            respawnPoint.position = new Vector3(transform.position.x, respawnPoint.position.y, respawnPoint.position.z);
+            respawnPoint.position = new Vector3(transform.position.x, respawnPoint.position.y, transform.position.z);
         }
     }
 }

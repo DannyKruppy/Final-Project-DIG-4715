@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level0-Hub.unity
     guid: 088146a0ecfd1aa4490308296821dc74
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/Level1Tutorial.unity
     guid: e75840e3c99a12e4d85f5bc354974e77
   - enabled: 1
     path: Assets/Scenes/Level2.unity
