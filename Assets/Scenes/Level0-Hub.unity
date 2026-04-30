@@ -9387,6 +9387,124 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &993805129869177891
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4801423268149887886, guid: 46f2711b5cfe87f4fa1fe420bab8bf2c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -25.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801423268149887886, guid: 46f2711b5cfe87f4fa1fe420bab8bf2c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5000009
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801423268149887886, guid: 46f2711b5cfe87f4fa1fe420bab8bf2c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801423268149887886, guid: 46f2711b5cfe87f4fa1fe420bab8bf2c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.2588191
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801423268149887886, guid: 46f2711b5cfe87f4fa1fe420bab8bf2c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801423268149887886, guid: 46f2711b5cfe87f4fa1fe420bab8bf2c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9659258
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801423268149887886, guid: 46f2711b5cfe87f4fa1fe420bab8bf2c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801423268149887886, guid: 46f2711b5cfe87f4fa1fe420bab8bf2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801423268149887886, guid: 46f2711b5cfe87f4fa1fe420bab8bf2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801423268149887886, guid: 46f2711b5cfe87f4fa1fe420bab8bf2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326005365608732980, guid: 46f2711b5cfe87f4fa1fe420bab8bf2c, type: 3}
+      propertyPath: m_Name
+      value: Alien (Blue)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5791521902491912506, guid: 46f2711b5cfe87f4fa1fe420bab8bf2c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a176a80818b979b488dd9de03658e4ba, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 46f2711b5cfe87f4fa1fe420bab8bf2c, type: 3}
+--- !u!1001 &2071109068305259045
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4790682538820739715, guid: e8a26478f988b38448ef6633e9ef42b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 29.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790682538820739715, guid: e8a26478f988b38448ef6633e9ef42b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.50000054
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790682538820739715, guid: e8a26478f988b38448ef6633e9ef42b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790682538820739715, guid: e8a26478f988b38448ef6633e9ef42b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.2588191
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790682538820739715, guid: e8a26478f988b38448ef6633e9ef42b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790682538820739715, guid: e8a26478f988b38448ef6633e9ef42b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9659258
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790682538820739715, guid: e8a26478f988b38448ef6633e9ef42b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790682538820739715, guid: e8a26478f988b38448ef6633e9ef42b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790682538820739715, guid: e8a26478f988b38448ef6633e9ef42b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790682538820739715, guid: e8a26478f988b38448ef6633e9ef42b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273782025900521529, guid: e8a26478f988b38448ef6633e9ef42b9, type: 3}
+      propertyPath: m_Name
+      value: Alien (Pink)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8a26478f988b38448ef6633e9ef42b9, type: 3}
 --- !u!20 &2750624357811431777
 Camera:
   m_ObjectHideFlags: 0
@@ -9891,3 +10009,5 @@ SceneRoots:
   - {fileID: 322622722}
   - {fileID: 598594018}
   - {fileID: 777142072}
+  - {fileID: 993805129869177891}
+  - {fileID: 2071109068305259045}
