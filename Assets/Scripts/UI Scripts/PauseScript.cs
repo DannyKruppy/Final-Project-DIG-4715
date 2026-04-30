@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 using System.Collections;
 
 public class PauseScript : MonoBehaviour
@@ -10,6 +11,7 @@ public class PauseScript : MonoBehaviour
     public bool paused = false;
     public GameObject pauseMenu;
     public GameObject gameCanvas;
+    public GameObject firstButton;
 
     public AudioSource audioSource;
     public AudioClip clickSound;
@@ -53,6 +55,9 @@ public class PauseScript : MonoBehaviour
             Time.timeScale = 0f;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(firstButton);
         }
         else
         {
