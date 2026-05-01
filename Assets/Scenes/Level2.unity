@@ -12441,9 +12441,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 585657180}
     - target: {fileID: 4126768997631347512, guid: 90d1986d9f28b144e94df1d7a5371db9, type: 3}
+      propertyPath: clickSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0e6a1e293155ba645b7b917f68d4974a, type: 3}
+    - target: {fileID: 4126768997631347512, guid: 90d1986d9f28b144e94df1d7a5371db9, type: 3}
       propertyPath: gameCanvas
       value: 
       objectReference: {fileID: 12142313}
+    - target: {fileID: 4126768997631347512, guid: 90d1986d9f28b144e94df1d7a5371db9, type: 3}
+      propertyPath: hoverSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c9b9771b8c939e647be86e411775af46, type: 3}
+    - target: {fileID: 4126768997631347512, guid: 90d1986d9f28b144e94df1d7a5371db9, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2071334149}
+    - target: {fileID: 4126768997631347512, guid: 90d1986d9f28b144e94df1d7a5371db9, type: 3}
+      propertyPath: firstButton
+      value: 
+      objectReference: {fileID: 884741364}
+    - target: {fileID: 4126768997631347512, guid: 90d1986d9f28b144e94df1d7a5371db9, type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 2071334149}
     - target: {fileID: 4692231263349065556, guid: 90d1986d9f28b144e94df1d7a5371db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.71208
