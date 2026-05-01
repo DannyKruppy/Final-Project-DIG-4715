@@ -6421,7 +6421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
       propertyPath: sceneName
-      value: Level0-Hub
+      value: Story1
       objectReference: {fileID: 0}
     - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
       propertyPath: blackScreen
@@ -6429,11 +6429,11 @@ PrefabInstance:
       objectReference: {fileID: 1595096105}
     - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
       propertyPath: maxTimes.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
       propertyPath: levelNames.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
       propertyPath: 'maxTimes.Array.data[0]'
