@@ -5160,7 +5160,7 @@ PrefabInstance:
     - target: {fileID: 2537904244961675009, guid: a9c09f55fde409d46a16a3dcd1d34b8a, type: 3}
       propertyPath: audioSource
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2071334149}
     - target: {fileID: 3282909427214670411, guid: a9c09f55fde409d46a16a3dcd1d34b8a, type: 3}
       propertyPath: m_Name
       value: Key_Blue
@@ -10886,7 +10886,7 @@ PrefabInstance:
       objectReference: {fileID: 1030721224}
     - target: {fileID: 8218368123313265578, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.146038
+      value: -24.9
       objectReference: {fileID: 0}
     - target: {fileID: 8218368123313265578, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10894,7 +10894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8218368123313265578, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.7733984
+      value: 118.8
       objectReference: {fileID: 0}
     - target: {fileID: 8218368123313265578, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
       propertyPath: m_LocalRotation.w
