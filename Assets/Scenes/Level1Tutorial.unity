@@ -1536,9 +1536,9 @@ MonoBehaviour:
   pastMat: {fileID: 2100000, guid: 7456491ba20926a4ababda1278b0f0c8, type: 2}
   futureMat: {fileID: 2100000, guid: 724623a7f210f1b4b8584b7708d3c8f5, type: 2}
   persistentMat: {fileID: 2100000, guid: 917ffca929b61fb42b3555f482278e18, type: 2}
-  player: {fileID: 6486994525260786094}
-  playerPastMat: {fileID: 2100000, guid: e1ebccb33be74e240922cf70ff842376, type: 2}
-  playerFutureMat: {fileID: 2100000, guid: 7cb3c2a63fd7f364e8f4dde8de41631d, type: 2}
+  player: {fileID: 1058810008}
+  playerPastMat: {fileID: 2100000, guid: 39dbb423bd848f24ba69cca44576a361, type: 2}
+  playerFutureMat: {fileID: 2100000, guid: 266f2c11dc34b214fa4d8f2bb0fadd8f, type: 2}
   pauseManager: {fileID: 500410745}
   maxTime: 20
   drainRate: 3
@@ -4679,6 +4679,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1058810008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6395337425634200051, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
+  m_PrefabInstance: {fileID: 3325548827243306196}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1094363956
 GameObject:
   m_ObjectHideFlags: 0
@@ -9151,6 +9156,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1406332563816378666, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1775923133311911822, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
       propertyPath: sprintBar
       value: 
@@ -9328,11 +9337,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 114231403}
   m_LocalEulerAnglesHint: {x: 51.089, y: 0, z: 0}
---- !u!1 &6486994525260786094 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9156124928225349764, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
-  m_PrefabInstance: {fileID: 3325548827243306196}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &6486994525260786095 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 4534448519646914894, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
