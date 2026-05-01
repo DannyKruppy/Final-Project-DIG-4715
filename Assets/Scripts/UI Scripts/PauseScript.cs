@@ -89,6 +89,19 @@ public class PauseScript : MonoBehaviour
         SceneManager.LoadSceneAsync("Title");
     }
 
+    public void ExitToHub()
+    {
+        PlayClick();
+        StartCoroutine(ExitToHubRoutine());
+
+    }
+
+    private IEnumerator ExitToHubRoutine()
+    {
+        yield return new WaitForSecondsRealtime(0.2f);
+        SceneManager.LoadSceneAsync("Level0-Hub");
+    }
+
     public void ExitToDesktop()
     {
         PlayClick();
