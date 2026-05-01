@@ -18,8 +18,8 @@ public class Door : MonoBehaviour
     [Header("Hub Settings")]
     public string[] levelNames;
     public float[] maxTimes;
-    public string winScene = "WinScene";
-    public string loseScene = "GameOver";
+    public string winScene = "StoryWin";
+    public string loseScene = "StoryLose";
 
     private bool triggered = false;
 
