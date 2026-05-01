@@ -51,6 +51,18 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(LoadSceneWithDelay("Level1Blockout"));
     }
 
+    public void WinScene()
+    {
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("WinScene"));
+    }
+
+    public void LoseScene()
+    {
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("GameOver"));
+    }
+
     public void LevelSelect()
     {
         PlayClick();
