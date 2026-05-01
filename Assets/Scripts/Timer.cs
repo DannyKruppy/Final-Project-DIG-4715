@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     private float count;
     public float maxCount = 100;
 
+    [Header("UI")]
     public GameObject timerBar;
     private Image timerBarImage;
 
@@ -25,97 +26,122 @@ public class Timer : MonoBehaviour
     private Coroutine warningCoroutine;
 
     [Header("Level Info")]
-    public string levelName; // e.g. "Level1", "Level2", "Level3"
+    public string levelName;
 
     private bool levelCompleted = false;
 
     void Start()
     {
         timerBarImage = timerBar.GetComponent<Image>();
-        resetTimer();
+        ResetTimer();
     }
 
     void Update()
     {
+        // Stop timer after completion
         if (!levelCompleted)
+        {
             count -= Time.deltaTime;
+        }
 
-        // Warning ticks
+        // Start warning ticks
         if (count <= 10f && count > 0 && !warningStarted)
         {
             warningStarted = true;
             warningCoroutine = StartCoroutine(WarningTickRoutine());
         }
 
-        // Color change for overtime
-        timerText.color = (count < 0) ? overtimeColor : normalColor;
+        // Overtime color
+        timerText.color =
+            (count < 0) ? overtimeColor : normalColor;
 
-        // Stop audio at 0
+        // Stop ticking after timer passes 0
         if (count <= 0 && warningCoroutine != null)
         {
             StopCoroutine(warningCoroutine);
             warningCoroutine = null;
+
             audioSource.Stop();
         }
 
-        timerBarImage.fillAmount = Mathf.Clamp01(count / maxCount);
-        timerText.text = Mathf.Abs(count).ToString("F2");
+        // UI
+        timerBarImage.fillAmount =
+            Mathf.Clamp01(count / maxCount);
+
+        timerText.text =
+            Mathf.Abs(count).ToString("F2");
     }
 
-    public void resetTimer()
+    public void ResetTimer()
     {
         count = maxCount;
+
         warningStarted = false;
         levelCompleted = false;
+
         timerText.color = normalColor;
     }
 
-    // =========================
-    // CALL WHEN LEVEL IS COMPLETED
-    // =========================
+    // =====================================
+    // LEVEL COMPLETE
+    // =====================================
     public void CompleteLevel()
     {
         if (levelCompleted) return;
 
         levelCompleted = true;
 
-        float timeTaken = Mathf.Max(0, maxCount - count);
+        // Real time taken
+        float timeTaken =
+            Mathf.Max(0, maxCount - count);
 
-        SaveLevelTime(timeTaken);
+        // Save THIS RUN
+        GameSession.SaveLevelTime(levelName, timeTaken);
 
-        Debug.Log("Saved: " + levelName + "_BestTime = " + timeTaken);
+        // Save permanent best
+        SaveBestTime(timeTaken);
 
         Debug.Log(
+            "RUN SAVED: " +
             levelName +
-            " | TimeTaken: " + timeTaken +
-            " | MaxAllowed: " + maxCount +
-            " | Raw Count: " + count
+            " = " +
+            timeTaken
         );
     }
 
-    // =========================
-    // SAVE BEST TIME
-    // =========================
-    void SaveLevelTime(float timeTaken)
+    // =====================================
+    // SAVE BEST TIME (PERMANENT)
+    // =====================================
+    void SaveBestTime(float timeTaken)
     {
         string key = levelName + "_BestTime";
 
-        float currentBest = PlayerPrefs.GetFloat(key, float.MaxValue);
+        float currentBest =
+            PlayerPrefs.GetFloat(key, float.MaxValue);
 
+        // First run OR better run
         if (timeTaken < currentBest)
         {
             PlayerPrefs.SetFloat(key, timeTaken);
             PlayerPrefs.Save();
+
+            Debug.Log("NEW BEST TIME: " + timeTaken);
         }
     }
 
+    // =====================================
+    // WARNING TICKS
+    // =====================================
     private IEnumerator WarningTickRoutine()
     {
         while (count > 0 && !levelCompleted)
         {
             audioSource.PlayOneShot(warningTickSound);
 
-            float waitTime = count <= 5f ? 0.5f : 1f;
+            // Faster ticks near 0
+            float waitTime =
+                (count <= 5f) ? 0.5f : 1f;
+
             yield return new WaitForSecondsRealtime(waitTime);
         }
     }

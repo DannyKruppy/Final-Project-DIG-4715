@@ -18,6 +18,7 @@ public class Door : MonoBehaviour
     [Header("Hub Settings")]
     public string[] levelNames;
     public float[] maxTimes;
+
     public string winScene = "StoryWin";
     public string loseScene = "StoryLose";
 
@@ -26,13 +27,14 @@ public class Door : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (triggered) return;
+
         if (!other.CompareTag("Player")) return;
 
         triggered = true;
 
-        // =========================
-        // LEVEL DOOR
-        // =========================
+        // =====================================
+        // NORMAL LEVEL DOOR
+        // =====================================
         if (!isHubDoor)
         {
             if (timer != null)
@@ -44,62 +46,108 @@ public class Door : MonoBehaviour
             return;
         }
 
-        // =========================
-        // HUB DOOR
-        // =========================
+        // =====================================
+        // HUB FINAL DOOR
+        // =====================================
+
+        // Check completion
         if (!AllLevelsCompleted())
         {
-            Debug.Log("Not all levels completed yet!");
+            Debug.Log("Not all levels completed!");
+
             triggered = false;
             return;
         }
 
-        string targetScene = AllLevelsUnderTime() ? winScene : loseScene;
+        bool passed = AllLevelsUnderTime();
+        Debug.Log("Final Result = " + passed);
+
+        // Check win/loss
+        string targetScene =
+            passed
+            ? winScene
+            : loseScene;
+
+        Debug.Log("Loading Scene: " + targetScene);
 
         StartCoroutine(FadeToBlack(targetScene));
     }
 
-    // =========================
-    // CHECK COMPLETION
-    // =========================
+    // =====================================
+    // CHECK ALL LEVELS COMPLETED
+    // =====================================
     bool AllLevelsCompleted()
     {
         foreach (string lvl in levelNames)
         {
-            if (!PlayerPrefs.HasKey(lvl + "_BestTime"))
+            if (!GameSession.HasLevel(lvl))
+            {
                 return false;
+            }
         }
+
         return true;
     }
 
-    // =========================
-    // CHECK TIMES
-    // =========================
+    // =====================================
+    // CHECK ALL TIMES UNDER LIMIT
+    // =====================================
     bool AllLevelsUnderTime()
     {
         for (int i = 0; i < levelNames.Length; i++)
         {
-            float time = PlayerPrefs.GetFloat(levelNames[i] + "_BestTime", float.MaxValue);
+            float time =
+                GameSession.GetLevelTime(levelNames[i]);
 
-            if (time > maxTimes[i])
+            // Missing level
+            if (time < 0)
+            {
                 return false;
+            }
+
+            // Failed time requirement
+            if (time > maxTimes[i])
+            {
+                Debug.Log(
+                    levelNames[i] +
+                    " FAILED | Time: " +
+                    time +
+                    " | Max: " +
+                    maxTimes[i]
+                );
+
+                return false;
+            }
+
+            Debug.Log(
+                levelNames[i] +
+                " PASSED | Time: " +
+                time +
+                " | Max: " +
+                maxTimes[i]
+            );
         }
+
         return true;
     }
 
-    // =========================
-    // FADE + LOAD
-    // =========================
+    // =====================================
+    // FADE TRANSITION
+    // =====================================
     private IEnumerator FadeToBlack(string targetScene)
     {
         float t = 0f;
+
         Color imageColor = blackScreen.color;
 
         while (t < 1f)
         {
             t += Time.deltaTime;
+
             imageColor.a = t;
+
             blackScreen.color = imageColor;
+
             yield return null;
         }
 

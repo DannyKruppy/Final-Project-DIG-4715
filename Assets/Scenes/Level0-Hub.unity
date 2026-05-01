@@ -2178,10 +2178,14 @@ MonoBehaviour:
   level2Text: {fileID: 1373158909}
   level3Text: {fileID: 973796750}
   totalText: {fileID: 1227171649}
+  levelNames:
+  - Level1
+  - Level2
+  - Level3
   maxTimes:
-  - 100
-  - 100
   - 200
+  - 260
+  - 260
 --- !u!1 &448319543
 GameObject:
   m_ObjectHideFlags: 0

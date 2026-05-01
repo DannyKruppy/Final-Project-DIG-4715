@@ -37,7 +37,7 @@ public class MainMenu : MonoBehaviour
         }
 
         PlayClick();
-        StartCoroutine(LoadSceneWithDelay("Level0-Hub"));
+        StartCoroutine(LoadSceneWithDelay("Story1"));
     }
 
     public void LevelOne()
