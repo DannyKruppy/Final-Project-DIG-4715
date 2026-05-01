@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 787689696}
   - component: {fileID: 787689695}
   m_Layer: 5
-  m_Name: Back to Hub Text
+  m_Name: TutorialText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Back to Hub
+  m_text: Tutorial
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f3c893d93a652a4a9c0c844f4a579db, type: 2}
   m_sharedMaterial: {fileID: -6345960669278155308, guid: 4f3c893d93a652a4a9c0c844f4a579db, type: 2}
@@ -1153,7 +1153,7 @@ GameObject:
   - component: {fileID: 1941252517}
   - component: {fileID: 1941252516}
   m_Layer: 5
-  m_Name: Back to Hub
+  m_Name: Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1254,7 +1254,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 590005437}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: StoryContinue
+        m_MethodName: Tutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

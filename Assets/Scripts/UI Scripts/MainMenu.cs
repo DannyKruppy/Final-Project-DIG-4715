@@ -57,6 +57,13 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(LoadSceneWithDelay("WinScene"));
     }
 
+    public void Tutorial()
+    {
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("Level1Tutorial"));
+    }
+
+
     public void LoseScene()
     {
         PlayClick();
