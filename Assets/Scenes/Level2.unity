@@ -12251,7 +12251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Timer
   maxCount: 200
-  timerBar: {fileID: 95500449}
+  timerBar: {fileID: 1043430556}
   timerText: {fileID: 1388046573}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   overtimeColor: {r: 1, g: 0, b: 0, a: 1}
