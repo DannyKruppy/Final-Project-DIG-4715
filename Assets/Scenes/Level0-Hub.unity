@@ -746,7 +746,8 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 9078958074245382224, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
@@ -758,13 +759,36 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9078958074245382224, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
       insertIndex: -1
       addedObject: {fileID: 121401248}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4362847882925346749, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 154362409}
   m_SourcePrefab: {fileID: 100100000, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
 --- !u!4 &154362407 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9078958074245382224, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
   m_PrefabInstance: {fileID: 154362406}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &154362408 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4362847882925346749, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+  m_PrefabInstance: {fileID: 154362406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &154362409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154362408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c432906b681ce046a095b22d8681295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HubTeleportDoors
+  targetScene: Level2
+  blackScreen: {fileID: 1595096105}
+  fadeDuration: 1
 --- !u!1 &190007975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,11 +1716,35 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4362847882925346749, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 322622724}
   m_SourcePrefab: {fileID: 100100000, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+--- !u!1 &322622723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4362847882925346749, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+  m_PrefabInstance: {fileID: 322622722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &322622724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322622723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c432906b681ce046a095b22d8681295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HubTeleportDoors
+  targetScene: Level3
+  blackScreen: {fileID: 1595096105}
+  fadeDuration: 1
 --- !u!1 &332584176
 GameObject:
   m_ObjectHideFlags: 0
@@ -4830,11 +4878,35 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4362847882925346749, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 907346729}
   m_SourcePrefab: {fileID: 100100000, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+--- !u!1 &907346728 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4362847882925346749, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+  m_PrefabInstance: {fileID: 907346727}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &907346729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907346728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c432906b681ce046a095b22d8681295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HubTeleportDoors
+  targetScene: Level4
+  blackScreen: {fileID: 1595096105}
+  fadeDuration: 1
 --- !u!1 &936537986
 GameObject:
   m_ObjectHideFlags: 0

@@ -1615,9 +1615,9 @@ MonoBehaviour:
   pastMat: {fileID: 2100000, guid: 981abf7a53e6a964fba6bc48555ec31a, type: 2}
   futureMat: {fileID: 2100000, guid: dfc08c90188302847afb04f628582097, type: 2}
   persistentMat: {fileID: 2100000, guid: d76d5dba59c8a824a8170635648a356c, type: 2}
-  player: {fileID: 1418167112}
-  playerPastMat: {fileID: 2100000, guid: e1ebccb33be74e240922cf70ff842376, type: 2}
-  playerFutureMat: {fileID: 2100000, guid: 7cb3c2a63fd7f364e8f4dde8de41631d, type: 2}
+  player: {fileID: 1539993015}
+  playerPastMat: {fileID: 2100000, guid: 39dbb423bd848f24ba69cca44576a361, type: 2}
+  playerFutureMat: {fileID: 2100000, guid: 266f2c11dc34b214fa4d8f2bb0fadd8f, type: 2}
   pauseManager: {fileID: 500410745}
   maxTime: 20
   drainRate: 3
@@ -8768,11 +8768,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1539943586}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1418167112 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9156124928225349764, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
-  m_PrefabInstance: {fileID: 1539993014}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &1418167113 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 4534448519646914894, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
@@ -9463,6 +9458,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
+--- !u!1 &1539993015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6395337425634200051, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
+  m_PrefabInstance: {fileID: 1539993014}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1554200850 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7982674703975862932, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
@@ -11152,6 +11152,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1371432516}
     - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      propertyPath: winScene
+      value: StoryWin
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      propertyPath: loseScene
+      value: StoryLose
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
       propertyPath: sceneName
       value: Story5
       objectReference: {fileID: 0}
@@ -11159,6 +11167,38 @@ PrefabInstance:
       propertyPath: blackScreen
       value: 
       objectReference: {fileID: 1595096105}
+    - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      propertyPath: maxTimes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      propertyPath: levelNames.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      propertyPath: 'maxTimes.Array.data[0]'
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      propertyPath: 'maxTimes.Array.data[1]'
+      value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      propertyPath: 'maxTimes.Array.data[2]'
+      value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      propertyPath: 'levelNames.Array.data[0]'
+      value: Level1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      propertyPath: 'levelNames.Array.data[1]'
+      value: Level2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889096093813785301, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
+      propertyPath: 'levelNames.Array.data[2]'
+      value: Level3
+      objectReference: {fileID: 0}
     - target: {fileID: 9078958074245382224, guid: bf44bb5b02beef1438d560d3f332b317, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
