@@ -84,6 +84,13 @@ public class Timer : MonoBehaviour
         SaveLevelTime(timeTaken);
 
         Debug.Log("Saved: " + levelName + "_BestTime = " + timeTaken);
+
+        Debug.Log(
+            levelName +
+            " | TimeTaken: " + timeTaken +
+            " | MaxAllowed: " + maxCount +
+            " | Raw Count: " + count
+        );
     }
 
     // =========================
