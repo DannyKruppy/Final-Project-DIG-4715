@@ -1656,7 +1656,6 @@ GameObject:
   - component: {fileID: 977017745}
   - component: {fileID: 977017744}
   - component: {fileID: 977017747}
-  - component: {fileID: 977017748}
   - component: {fileID: 977017746}
   m_Layer: 0
   m_Name: Main Camera
@@ -1914,22 +1913,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Win
   audioSource: {fileID: 81318192}
   WinSFX: {fileID: 8300000, guid: 8dd8dc4609c92ee48bdb16b88d267f1b, type: 3}
---- !u!114 &977017748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977017740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca638395723149a4ea196e65a42e236a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WinUI
-  level1Text: {fileID: 0}
-  level2Text: {fileID: 0}
-  level3Text: {fileID: 0}
-  totalText: {fileID: 0}
 --- !u!1 &977406124
 GameObject:
   m_ObjectHideFlags: 0
