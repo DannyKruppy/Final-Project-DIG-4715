@@ -59,8 +59,24 @@ public class MainMenu : MonoBehaviour
 
     public void Tutorial()
     {
+        if (titleMusic != null)
+        {
+            titleMusic.StopMusic();
+        }
+
         PlayClick();
         StartCoroutine(LoadSceneWithDelay("Level1Tutorial"));
+    }
+
+       public void Story1()
+    {
+        if (titleMusic != null)
+        {
+            titleMusic.StopMusic();
+        }
+        
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("Story1"));
     }
 
 
