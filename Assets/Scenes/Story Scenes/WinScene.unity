@@ -2105,6 +2105,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7086053724246754862, guid: d8d5f2fa746f1f94fb05b8b60a1065ea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1514486604}
+    - targetCorrespondingSourceObject: {fileID: 7086053724246754862, guid: d8d5f2fa746f1f94fb05b8b60a1065ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1514486605}
   m_SourcePrefab: {fileID: 100100000, guid: d8d5f2fa746f1f94fb05b8b60a1065ea, type: 3}
 --- !u!1 &1514486603 stripped
 GameObject:
@@ -2142,6 +2145,19 @@ MonoBehaviour:
   wobbleSpeed: 50
   destroyOnReach: 0
   destroyDistance: 0.1
+--- !u!114 &1514486605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514486603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af74d286cfa3274429c9808dfa3b3d02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rotate
+  speed: 100
 --- !u!1 &1527515743
 GameObject:
   m_ObjectHideFlags: 0
