@@ -1997,8 +1997,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SwitchTrigger
   controller: {fileID: 2084950596}
   playerOnSwitch: 0
-  audioSource: {fileID: 0}
-  switchSound: {fileID: 0}
+  audioSource: {fileID: 6486994525260786095}
+  switchSound: {fileID: 8300000, guid: 83054923ec84dcb46a19f4f865729755, type: 3}
 --- !u!65 &380825361
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4017,7 +4017,7 @@ PrefabInstance:
       objectReference: {fileID: 6486994525260786095}
     - target: {fileID: 6862827543428070112, guid: 407fbda1a81093740ba0a3824a24bb89, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.09
+      value: -32.07
       objectReference: {fileID: 0}
     - target: {fileID: 6862827543428070112, guid: 407fbda1a81093740ba0a3824a24bb89, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4025,7 +4025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6862827543428070112, guid: 407fbda1a81093740ba0a3824a24bb89, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -30.93
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 6862827543428070112, guid: 407fbda1a81093740ba0a3824a24bb89, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4233,8 +4233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SwitchTrigger
   controller: {fileID: 2084950596}
   playerOnSwitch: 0
-  audioSource: {fileID: 0}
-  switchSound: {fileID: 0}
+  audioSource: {fileID: 6486994525260786095}
+  switchSound: {fileID: 8300000, guid: 83054923ec84dcb46a19f4f865729755, type: 3}
 --- !u!1 &777142071
 GameObject:
   m_ObjectHideFlags: 0
@@ -4652,15 +4652,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7498007216540288509, guid: a9c09f55fde409d46a16a3dcd1d34b8a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.09
+      value: -32.07
       objectReference: {fileID: 0}
     - target: {fileID: 7498007216540288509, guid: a9c09f55fde409d46a16a3dcd1d34b8a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.299
+      value: -1.361
       objectReference: {fileID: 0}
     - target: {fileID: 7498007216540288509, guid: a9c09f55fde409d46a16a3dcd1d34b8a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -36.67
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 7498007216540288509, guid: a9c09f55fde409d46a16a3dcd1d34b8a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7476,15 +7476,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1537118526228549697, guid: d17b7c073f8c1ff4180e15184521ae59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.09
+      value: -32.07
       objectReference: {fileID: 0}
     - target: {fileID: 1537118526228549697, guid: d17b7c073f8c1ff4180e15184521ae59, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.299
+      value: -1.415
       objectReference: {fileID: 0}
     - target: {fileID: 1537118526228549697, guid: d17b7c073f8c1ff4180e15184521ae59, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.11
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 1537118526228549697, guid: d17b7c073f8c1ff4180e15184521ae59, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9041,8 +9041,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SwitchTrigger
   controller: {fileID: 2084950596}
   playerOnSwitch: 0
-  audioSource: {fileID: 0}
-  switchSound: {fileID: 0}
+  audioSource: {fileID: 6486994525260786095}
+  switchSound: {fileID: 8300000, guid: 83054923ec84dcb46a19f4f865729755, type: 3}
 --- !u!65 &1930232705
 BoxCollider:
   m_ObjectHideFlags: 0
