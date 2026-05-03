@@ -2465,8 +2465,8 @@ MonoBehaviour:
   futureMat: {fileID: 2100000, guid: 724623a7f210f1b4b8584b7708d3c8f5, type: 2}
   persistentMat: {fileID: 2100000, guid: 917ffca929b61fb42b3555f482278e18, type: 2}
   player: {fileID: 3325548827243306197}
-  playerPastMat: {fileID: 2100000, guid: 39dbb423bd848f24ba69cca44576a361, type: 2}
-  playerFutureMat: {fileID: 2100000, guid: 266f2c11dc34b214fa4d8f2bb0fadd8f, type: 2}
+  playerPastMat: {fileID: 2100000, guid: e1a0a2ad8b78e614091012b9dde61b87, type: 2}
+  playerFutureMat: {fileID: 2100000, guid: d63ca7a19ac10554f991f1d898e90687, type: 2}
   pauseManager: {fileID: 500410745}
   maxTime: 20
   drainRate: 3
@@ -15757,6 +15757,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 534818974425306342, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e1a0a2ad8b78e614091012b9dde61b87, type: 2}
     - target: {fileID: 1775923133311911822, guid: aee4f777063e9364cb06489d6fdc5804, type: 3}
       propertyPath: sprintBar
       value: 
