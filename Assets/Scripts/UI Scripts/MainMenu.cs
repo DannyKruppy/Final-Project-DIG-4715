@@ -19,6 +19,15 @@ public class MainMenu : MonoBehaviour
 
     private GameObject currentOpenPanel;
 
+    void Start()
+    {
+        // Re-hook TitleMusic automatically
+        if (titleMusic == null)
+        {
+            titleMusic = FindObjectOfType<TitleMusic>();
+        }
+    }
+
     private void PlayClick()
     {
         audioSource.PlayOneShot(clickSound);
