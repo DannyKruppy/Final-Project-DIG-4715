@@ -1997,8 +1997,8 @@ MonoBehaviour:
 
     Obstacles'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4f3c893d93a652a4a9c0c844f4a579db, type: 2}
-  m_sharedMaterial: {fileID: -6345960669278155308, guid: 4f3c893d93a652a4a9c0c844f4a579db, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2446,16 +2446,16 @@ MonoBehaviour:
   m_text: "\n\nTime Switch: \nThis ability shifts the world between two states, changing
     the level layout in real time. Platforms will appear or disappear depending on
     the current timeline, allowing access to new paths and hidden routes. Use it
-    strategically to navigate gaps and reach the end.\n\n\n\nSprint: \nSprinting
-    increases your movement speed but drains your stamina. Once stamina is depleted,
-    you must wait for it to recharge before sprinting again. Use sprinting to cross
-    large gaps or escape tight situations, but don\u2019t overuse it.\n\n\n\nTimer:
-    \nYou have a limited amount of time to complete the level. The timer continuously
-    counts down\u2014if it reaches 0, the run ends in Game Over. Manage your movement
-    and use abilities efficiently to reach the goal before time runs out."
+    strategically to navigate gaps and reach the end.\n\n\nSprint: \nSprinting increases
+    your movement speed but drains your stamina. Once stamina is depleted, you must
+    wait for it to recharge before sprinting again. Use sprinting to cross large
+    gaps or escape tight situations, but don\u2019t overuse it.\n\n\nTimer: \nYou
+    have a limited amount of time to complete the level. The timer continuously counts
+    down\u2014if it reaches 0, the run ends in Game Over. Manage your movement and
+    use abilities efficiently to reach the goal before time runs out."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4f3c893d93a652a4a9c0c844f4a579db, type: 2}
-  m_sharedMaterial: {fileID: -6345960669278155308, guid: 4f3c893d93a652a4a9c0c844f4a579db, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3424,8 +3424,8 @@ MonoBehaviour:
 
     Mechanics'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4f3c893d93a652a4a9c0c844f4a579db, type: 2}
-  m_sharedMaterial: {fileID: -6345960669278155308, guid: 4f3c893d93a652a4a9c0c844f4a579db, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4967,18 +4967,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\nSwitches:\n\nWill toggle state upon coming into contact with the player\n\nGreen
-    = On\n\nWhen all switches are green, they will turn gold and activate a door\n\n\nMoving
+  m_text: "\nSwitches:\n\nWill toggle state upon coming into contact with the player\n\nGreen
+    = On\n\nWhen all switches are green, they will turn gold and activate a door\n\nMoving
     Platforms: Moving platforms are dynamic surfaces that travel along a set path\u2014adding
     timing and positioning challenges to basic platforming. They can carry the player
-    across gaps and force precise jumps.\n\n\nBreakable Platforms: Platforms that
-    disappear after a duration of time. The longer the player stands on this platform,
-    the more red it becomes until it eventually disappears. Breakable Platforms respawn
-    after 5 seconds.\n\n\nSpikes: Landing on spikes respawns the player to their
-    most recent checkpoint.\n\n"
+    across gaps and force precise jumps.\n\nBreakable Platforms: Platforms that disappear
+    after a duration of time. The longer the player stands on this platform, the
+    more red it becomes until it eventually disappears. Breakable Platforms respawn
+    after 5 seconds.\n\nSpikes: Landing on spikes respawns the player to their most
+    recent checkpoint.\n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4f3c893d93a652a4a9c0c844f4a579db, type: 2}
-  m_sharedMaterial: {fileID: -6345960669278155308, guid: 4f3c893d93a652a4a9c0c844f4a579db, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
