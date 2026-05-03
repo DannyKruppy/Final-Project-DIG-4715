@@ -310,9 +310,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: cde7105af7bbe7f4a909c6e5750fbcea, type: 3}
+  m_Resource: {fileID: 8300000, guid: 6170655d55e91754894eb3944d761e46, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1097,79 +1097,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751800514}
   m_CullTransparentMesh: 1
---- !u!1001 &867679035
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 31.669582
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 31.669582
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 31.669582
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 38.2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -24.2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 77.3
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.28935823
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.9572209
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -146.361
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7676612043611361953, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: db581005e6a34304180a574043763b7a, type: 2}
-    - target: {fileID: 919132149155446097, guid: 272192beff1c1724783237678721bf41, type: 3}
-      propertyPath: m_Name
-      value: Ninja 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 272192beff1c1724783237678721bf41, type: 3}
 --- !u!1 &925326933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,7 +1701,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YOU LOST
+  m_text: Faster Time(s) Needed!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1783,8 +1710,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190335
-  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 0
   m_fontColorGradient:
@@ -2348,4 +2275,3 @@ SceneRoots:
   - {fileID: 1896578329}
   - {fileID: 1527515746}
   - {fileID: 97744289}
-  - {fileID: 867679035}

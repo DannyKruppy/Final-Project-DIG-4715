@@ -4,6 +4,8 @@ public class Respawn : MonoBehaviour
 {
     public Transform respawnPoint;
     public float threshold = -5f;
+    public AudioSource respawnSound;
+
     CharacterController controller;
 
     void Start()
@@ -29,6 +31,11 @@ public class Respawn : MonoBehaviour
 
     void RespawnPlayer()
     {
+        if (respawnSound != null)
+        {
+            respawnSound.Play();
+        }
+
         controller.enabled = false;
         transform.position = respawnPoint.position;
         controller.enabled = true;
