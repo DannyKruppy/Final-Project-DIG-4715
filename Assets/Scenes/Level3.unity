@@ -926,6 +926,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9176558
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.45882684
+      objectReference: {fileID: 0}
     - target: {fileID: 2251691769241223928, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: m_Name
       value: BreakablePlatformHolder (1)
@@ -2496,6 +2504,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.939288
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.46964344
+      objectReference: {fileID: 0}
     - target: {fileID: 2251691769241223928, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: m_Name
       value: BreakablePlatformHolder (4)
@@ -4352,6 +4368,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4477313
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.22386535
+      objectReference: {fileID: 0}
     - target: {fileID: 2251691769241223928, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: m_Name
       value: BreakablePlatformHolder (9)
@@ -4966,6 +4990,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.8345393
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.41726938
+      objectReference: {fileID: 0}
     - target: {fileID: 2251691769241223928, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: m_Name
       value: BreakablePlatformHolder (5)
@@ -5949,6 +5981,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5475001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.27374968
+      objectReference: {fileID: 0}
     - target: {fileID: 345591439003748214, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: hp
       value: 0.6
@@ -6705,6 +6745,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.x
+      value: 9.999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.55401
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.27700475
+      objectReference: {fileID: 0}
     - target: {fileID: 345591439003748214, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: hp
       value: 0.6
@@ -7207,6 +7259,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.866203
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.4331012
+      objectReference: {fileID: 0}
     - target: {fileID: 2251691769241223928, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: m_Name
       value: BreakablePlatformHolder (3)
@@ -9433,6 +9493,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.473752
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.23687574
+      objectReference: {fileID: 0}
     - target: {fileID: 345591439003748214, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: hp
       value: 0.6
@@ -9665,6 +9733,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9142519
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.45712543
+      objectReference: {fileID: 0}
     - target: {fileID: 2251691769241223928, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: m_Name
       value: BreakablePlatformHolder (2)
@@ -11269,6 +11345,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.x
+      value: 10.000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5038673
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.z
+      value: 9.999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.2519333
+      objectReference: {fileID: 0}
     - target: {fileID: 345591439003748214, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: hp
       value: 0.6
@@ -11460,6 +11552,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.570362
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.2851807
+      objectReference: {fileID: 0}
     - target: {fileID: 345591439003748214, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: hp
       value: 4
@@ -11541,6 +11641,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5415411
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.27077025
+      objectReference: {fileID: 0}
     - target: {fileID: 2251691769241223928, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: m_Name
       value: BreakablePlatformHolder (8)
@@ -12252,6 +12360,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4668704
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.23343493
+      objectReference: {fileID: 0}
     - target: {fileID: 345591439003748214, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: hp
       value: 0.6
@@ -12333,6 +12449,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4932927
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.24664606
+      objectReference: {fileID: 0}
     - target: {fileID: 345591439003748214, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: hp
       value: 0.6
@@ -12538,6 +12662,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.x
+      value: 9.999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5803618
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.29018062
+      objectReference: {fileID: 0}
     - target: {fileID: 345591439003748214, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: hp
       value: 0.6
@@ -13328,6 +13464,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4851002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.24254937
+      objectReference: {fileID: 0}
     - target: {fileID: 345591439003748214, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: hp
       value: 0.6
@@ -13709,6 +13853,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.739131
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.36956507
+      objectReference: {fileID: 0}
     - target: {fileID: 2251691769241223928, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: m_Name
       value: BreakablePlatformHolder (6)
@@ -13792,6 +13944,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.6860514
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.34302527
+      objectReference: {fileID: 0}
     - target: {fileID: 345591439003748214, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: hp
       value: 0.6
@@ -14157,6 +14317,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.x
+      value: 10.000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.531065
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.z
+      value: 9.999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.2655321
+      objectReference: {fileID: 0}
     - target: {fileID: 345591439003748214, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: hp
       value: 0.6
@@ -14982,6 +15158,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4639251
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.23196226
+      objectReference: {fileID: 0}
     - target: {fileID: 345591439003748214, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: hp
       value: 0.6
@@ -15196,6 +15380,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.x
+      value: 10.000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4852759
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.24263763
+      objectReference: {fileID: 0}
     - target: {fileID: 2251691769241223928, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: m_Name
       value: BreakablePlatformHolder (7)
@@ -16110,6 +16306,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1433592502}
     m_Modifications:
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.91355
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151396327711821, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
+      propertyPath: m_Center.y
+      value: 0.4567747
+      objectReference: {fileID: 0}
     - target: {fileID: 2251691769241223928, guid: 7f6d955fa26a67946b08a477a3da03d3, type: 3}
       propertyPath: m_Name
       value: BreakablePlatformHolder
