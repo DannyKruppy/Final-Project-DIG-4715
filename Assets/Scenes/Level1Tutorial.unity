@@ -644,8 +644,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SwitchTrigger
   controller: {fileID: 2084950596}
   playerOnSwitch: 0
-  audioSource: {fileID: 0}
-  switchSound: {fileID: 0}
+  audioSource: {fileID: 6486994525260786095}
+  switchSound: {fileID: 8300000, guid: 83054923ec84dcb46a19f4f865729755, type: 3}
 --- !u!65 &122407559
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3362,8 +3362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SwitchTrigger
   controller: {fileID: 2084950596}
   playerOnSwitch: 0
-  audioSource: {fileID: 0}
-  switchSound: {fileID: 0}
+  audioSource: {fileID: 6486994525260786095}
+  switchSound: {fileID: 8300000, guid: 83054923ec84dcb46a19f4f865729755, type: 3}
 --- !u!1 &791808145
 GameObject:
   m_ObjectHideFlags: 0
