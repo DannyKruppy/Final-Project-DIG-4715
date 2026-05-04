@@ -926,6 +926,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 777142072}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &235080880 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 755971176811422952, guid: ea012b5da712b9c4dba5347dbe106e0f, type: 3}
+  m_PrefabInstance: {fileID: 2014850892}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &251665096
 GameObject:
   m_ObjectHideFlags: 0
@@ -7485,6 +7490,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2139579362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &1447875627 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 740568568916527073, guid: ca15e907623b2b147ac1a5b90cfc59d4, type: 3}
+  m_PrefabInstance: {fileID: 1848793202}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1460222550
 GameObject:
   m_ObjectHideFlags: 0
@@ -8689,6 +8699,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3533947010587186451, guid: ca15e907623b2b147ac1a5b90cfc59d4, type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 1447875627}
     - target: {fileID: 4875583748385376233, guid: ca15e907623b2b147ac1a5b90cfc59d4, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -9226,6 +9240,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 520457087866687066, guid: ea012b5da712b9c4dba5347dbe106e0f, type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 235080880}
     - target: {fileID: 1987265932431465796, guid: ea012b5da712b9c4dba5347dbe106e0f, type: 3}
       propertyPath: m_Name
       value: Lock_Orange

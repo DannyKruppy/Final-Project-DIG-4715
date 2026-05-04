@@ -71,7 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   lockColor: pink
   lockModel: {fileID: 8796125316963597763}
-  explosionEffect: {fileID: 8528003185056223253, guid: 34edc45f1fe45244abf0dba93f87a959, type: 3}
+  explosionEffect: {fileID: 740568568916527073}
 --- !u!135 &6558849359815931548
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -241,6 +241,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34edc45f1fe45244abf0dba93f87a959, type: 3}
+--- !u!198 &740568568916527073 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8528003185056223253, guid: 34edc45f1fe45244abf0dba93f87a959, type: 3}
+  m_PrefabInstance: {fileID: 8943738219120023540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4274587774643739982 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5137736811894131386, guid: 34edc45f1fe45244abf0dba93f87a959, type: 3}

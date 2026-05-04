@@ -22,9 +22,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
                 case "blue":
                     if (inventoryHandler.BlueKeyGet())
                     {
-                        //play animation
-
-
                         //explosion and lock removal
                         lockModel.SetActive(false);
                         explosionEffect.Play();
@@ -34,8 +31,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
                 case "orange":
                     if (inventoryHandler.OrangeKeyGet())
                     {
-                        //play animation
-
                         //explosion and lock removal
                         lockModel.SetActive(false);
                         explosionEffect.Play();
@@ -45,8 +40,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
                 case "pink":
                     if (inventoryHandler.PinkKeyGet())
                     {
-                        //play animation
-
                         //explosion and lock removal
                         lockModel.SetActive(false);
                         explosionEffect.Play();
