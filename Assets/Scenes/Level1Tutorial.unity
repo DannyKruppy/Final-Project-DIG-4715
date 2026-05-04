@@ -2168,11 +2168,11 @@ MonoBehaviour:
   paused: 0
   pauseMenu: {fileID: 585657180}
   gameCanvas: {fileID: 12142313}
-  firstButton: {fileID: 0}
-  audioSource: {fileID: 0}
-  clickSound: {fileID: 0}
-  hoverSound: {fileID: 0}
-  musicSource: {fileID: 0}
+  firstButton: {fileID: 884741364}
+  audioSource: {fileID: 6486994525260786095}
+  clickSound: {fileID: 8300000, guid: 0e6a1e293155ba645b7b917f68d4974a, type: 3}
+  hoverSound: {fileID: 8300000, guid: c9b9771b8c939e647be86e411775af46, type: 3}
+  musicSource: {fileID: 6486994525260786095}
 --- !u!1 &514025874
 GameObject:
   m_ObjectHideFlags: 0

@@ -48,7 +48,7 @@ public class MainMenu : MonoBehaviour
         PlayClick();
         StartCoroutine(LoadSceneWithDelay("Story1"));
     }
-
+    
     public void LevelOne()
     {
         if (titleMusic != null)
@@ -57,7 +57,27 @@ public class MainMenu : MonoBehaviour
         }
 
         PlayClick();
-        StartCoroutine(LoadSceneWithDelay("Level0-Hub"));
+        StartCoroutine(LoadSceneWithDelay("Level2"));
+    }
+    public void LevelTwo()
+    {
+        if (titleMusic != null)
+        {
+            titleMusic.StopMusic();
+        }
+
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("Level3"));
+    }
+    public void LevelThree()
+    {
+        if (titleMusic != null)
+        {
+            titleMusic.StopMusic();
+        }
+
+        PlayClick();
+        StartCoroutine(LoadSceneWithDelay("Level4"));
     }
 
     public void WinScene()
